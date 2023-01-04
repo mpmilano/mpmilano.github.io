@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
+  <meta name="author" content="Mae Milano">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Gallifrey is a new programming language for distributed wide-area applications.  Gallifrey programs share state via replication, granting fast access to data without introducing mandatory synchronization points, all while maintaining sequential consistency by default.  Gallifrey aims to be easy-to-use, requiring a minimal annotation overhead atop an otherwise Java-like language.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://languagesforsyste.ms/project/gallifrey/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-130045632-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="http://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
+  <link rel="feed" href="http://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://languagesforsyste.ms/project/gallifrey/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@mbpmilano">
+  <meta property="twitter:creator" content="@mbpmilano">
+  
+  <meta property="og:site_name" content="Mae Milano">
+  <meta property="og:url" content="http://languagesforsyste.ms/project/gallifrey/">
+  <meta property="og:title" content="Gallifrey: a New Language for Distributed Programming | Mae Milano">
+  <meta property="og:description" content="Gallifrey is a new programming language for distributed wide-area applications.  Gallifrey programs share state via replication, granting fast access to data without introducing mandatory synchronization points, all while maintaining sequential consistency by default.  Gallifrey aims to be easy-to-use, requiring a minimal annotation overhead atop an otherwise Java-like language.">
+  
+  
+    
+  <meta property="og:image" content="http://languagesforsyste.ms/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-06-20T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-04-05T00:01:58-04:00">
+  
+
+  
+
+  
+
+  <title>Gallifrey: a New Language for Distributed Programming | Mae Milano</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header fixed-top">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Mae Milano</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#awards">
+            
+            <span>Awards</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Reports</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#service">
+            
+            <span>Service</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Gallifrey: a New Language for Distributed Programming</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Mae Milano">
+  </span>
+  
+
+  <span class="article-date">
+    
+        Last updated on
+    
+    <meta content="2018-06-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2020-04-05 00:01:58 -0400 EDT" itemprop="dateModified">
+      Apr 5, 2020
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Mae Milano">
+  </span>
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/project/gallifrey/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Gallifrey%3a%20a%20New%20Language%20for%20Distributed%20Programming&amp;url=http%3a%2f%2flanguagesforsyste.ms%2fproject%2fgallifrey%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flanguagesforsyste.ms%2fproject%2fgallifrey%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flanguagesforsyste.ms%2fproject%2fgallifrey%2f&amp;title=Gallifrey%3a%20a%20New%20Language%20for%20Distributed%20Programming"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2flanguagesforsyste.ms%2fproject%2fgallifrey%2f&amp;title=Gallifrey%3a%20a%20New%20Language%20for%20Distributed%20Programming"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+	  href="#"
+	  data-contact="bGUtZW1haWxAdGhlLWRvbWFpbi5jb20="
+      data-subj="QW4gQW1hemluZyBTdWJqZWN0"
+      onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">
+        <i class="fas fa-envelope"></i>
+      </a>
+	  
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="stop-me-if-you-ve-heard-this-one-before">Stop me if you&rsquo;ve heard this one before.</h2>
+
+<p>You&rsquo;re working on your phone or tablet, editing an online document,
+and you get on a plane.  At first everything is fine; your edits are
+cached locally, and most of the application is local to your phone
+anyway.  But then something happens; the page refreshes, or your
+device auto-connects to the dodgy in-flight wifi, and your
+previously-functioning application suddenly begins to &hellip; not.</p>
+
+<h3 id="distributed-programs-need-to-accept-disconnection">Distributed programs need to accept disconnection.</h3>
+
+<p>This common experience is a demonstration of an equally common flaw in
+modern client-facing distributed applications.  Trouble is, it&rsquo;s
+fundamentally hard to write a wide-area, heavily replicated
+distributed system&mdash;leading many applications to opt for a weaker
+model, like an &ldquo;interactive web page&rdquo; where data can be &ldquo;cached at the
+client&rdquo; for quick responsiveness.  But this model fundamentally
+<em>isn&rsquo;t</em> reality.  No matter what our frameworks tell us, distributed
+programs can&rsquo;t use the same assumptions and metaphors as local
+concurrency or traditional websites.  Modern distributed frameworks
+must accept that caches are replicas, that replicas are fundamental to
+good performance, and that replicas <em>must</em> tolerate periods of
+disconnection elegantly.  It is key that a distributed program should
+<strong>never implicitly block</strong>, operating off of <strong>local replicas</strong>
+whenever possible.</p>
+
+<h3 id="this-makes-consistency-hard">This makes consistency hard.</h3>
+
+<p>Because the moment you embrace the fact that your cached data is
+actually a first-class replica of shared global state, you must ask
+yourself how stale you can tolerate this data becoming, and what
+guarantees you need on the visibility of updates you make to this
+data.  Existing replicated systems that handle disconnection well do
+<a href="https://firebase.google.com/docs/database/android/offline-capabilities#transactions-are-not-persisted-across-app-restarts" target="_blank">quite</a>
+<a href="https://aphyr.com/posts/332-jepsen-crate-0-54-9-version-divergence" target="_blank">badly</a>
+<a href="https://docs.hazelcast.org/docs/3.8.6/manual/html-single/#network-partitioning-split-brain-syndrome" target="_blank">at</a> <a href="https://www.pubnub.com/blog/how-we-sped-up-eventually-consistent-databases-global-syncs-through-caching/" target="_blank">this</a>, giving rise to bizarre errors on
+re-connection including the ever-present threat of losing the last few
+hours&mdash;or even days&mdash;of work.  Correct applications must <strong>provide
+strong consistency</strong> by default, while ensuring any deviation from
+sequential consistency is <strong>locally justified</strong> and <strong>isolated</strong> from
+sensitive parts of the application.</p>
+
+<h3 id="these-features-need-language-support">These features need language support.</h3>
+
+<p>There are a <a href="http://bloom-lang.net/" target="_blank">few</a> (<a href="https://lasp-lang.readme.io/" target="_blank">very</a> <a href="https://2018.splashcon.org/details/splash-2018-SPLASH-I/15/What-happened-to-distributed-programming-languages-" target="_blank">few</a>) applications
+today which can offer transparent replication without sacrificing
+consistency.  But these applications are invariably hard to build, and
+prone to shipping <a href="http://jepsen.io/analyses" target="_blank">subtle consistency bugs</a>
+in production.  The properties that we&rsquo;re proposing&mdash;<strong>non-blocking
+replication</strong> which <strong>tolerates disconnection</strong> while ensuring
+<strong>strong consistency by default</strong>&mdash;are <em>global</em> properties of a
+distributed application.  They can&rsquo;t be enforced by a library alone,
+and they&rsquo;re difficult enough that relying on &ldquo;programmer discipline&rdquo;
+has, repeatedly, been shown to be insufficient.  These features can
+only be enforced at the language level&mdash;which is where we come in.</p>
+
+<h3 id="so-we-re-building-a-new-language">So we&rsquo;re building a new language.</h3>
+
+<p>We&rsquo;ve recently begun work on
+<a href="http://drops.dagstuhl.de/opus/volltexte/2019/10554/pdf/LIPIcs-SNAPL-2019-11.pdf" target="_blank">Gallifrey</a>,
+a new programming language designed to address exactly these issues.
+Gallifrey enables per-task programming, where each thread can share
+<em>any</em> object with the world <em>without sacrificing consistency</em>.
+Gallifrey is based on Java with a minimum of changes, making it easy
+to pick up and intuitive to use.</p>
+
+<p>Gallifrey&rsquo;s core feature is enabled via author-provided
+<strong>Restrictions</strong> on objects&rsquo; interfaces. When you want to share an
+object in Gallifrey, you must define a Restriction of its interface,
+limiting the available operations to only those which are safe to call
+concurrently and during disconnection.  This Restriction, in effect,
+transforms your normal local object into a
+<a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type" target="_blank">CRDT</a>,
+a class of object which has a rich and well-studied semantics for
+guaranteeing convergence even in the face of weakly-consistent
+updates.</p>
+
+<p>To keep the world of Restricted objects from consuming entire local
+programs, Gallifrey also employs a hybrid <strong>affine ownership</strong> type
+system which statically guarantees that an object (and everything it
+points to), when shared under a Restriction, can only be accessed via
+that Restriction.  We&rsquo;ve managed to take the best of affine typing
+(from languages like <a href="https://www.rust-lang.org/" target="_blank">Rust</a>) and apply it
+to Gallifrey, while still allowing a majority of Gallifrey code to
+enjoy the [almost] unrestricted aliasing and pervasive mutability
+common to Java programs.</p>
+
+<p>Finally we introduce <strong>branches</strong>, a new take on transactions inspired
+by the eponymous concept from version control.  Opening a branch
+allows a program to create a new scope which is totally isolated from
+the rest of the world, in effect voluntarily disconnecting a portion
+of the program from the wider Gallifrey network.  While within a
+branch, programmers can perform <strong>provisional</strong> operations which
+<em>don&rsquo;t</em> guarantee sequential consistency, <em>without</em> worrying that these
+operations will threaten the consistency of the wider application.</p>
+
+<p>More details can be found in the <a href="../../publication/gallifrey/">Gallifrey SNAPL paper</a>.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/transactions/">Transactions</a>
+  
+  <a class="badge badge-light" href="/tags/consistency/">Consistency</a>
+  
+  <a class="badge badge-light" href="/tags/programming-languages/">Programming Languages</a>
+  
+  <a class="badge badge-light" href="/tags/distributed-systems/">Distributed Systems</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/pride-face-nobackground.png" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Mae Milano</a></h5>
+    <h6 class="card-subtitle">PhD, Programming Languages and Systems</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:mpmilano@cs.berkeley.edu" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/mbpmilano" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=1XP8XcAAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/mpmilano" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+      
+      
+      
+        <h2>Posts</h2>
+        
+          
+            
+
+<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Mae Milano</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+        Last updated on
+    
+    <meta content="2020-10-31 00:00:00 -0400 EDT" itemprop="datePublished">
+    <time datetime="2021-12-31 09:57:18 -0800 -0800" itemprop="dateModified">
+      Dec 31, 2021
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Mae Milano">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/dissertation/#disqus_thread"></a>
+  
+
+  
+
+  
+
+</div>
+
+
+  
+  
+  
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/dissertation/" itemprop="url">My Dissertation is Now Available!</a>
+  </h3>
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>My dissertation is now available <a href="/files/thesis.pdf">here</a></p>
+    
+  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/dissertation/" class="btn btn-outline-primary my-1">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+          
+        
+      
+
+      
+      
+      
+      
+        <h2>Publications</h2>
+        
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/katara/" itemprop="url">Katara: Synthesizing CRDTs with Verified Lifting</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Conflict-free replicated data types (CRDTs) are a promising tool for designing scalable, coordination-free distributed systems. However, constructing correct CRDTs is difficult, posing a challenge for even seasoned developers. As a result, CRDT development is still largely the domain of academics, with new designs often awaiting peer review and a manual proof of correctness. In this paper, we present Katara, a program synthesis-based system that takes sequential data type implementations and automatically synthesizes verified CRDT designs from them. Key to this process is a new formal definition of CRDT correctness that combines a reference sequential type with a lightweight ordering constraint that resolves conflicts between noncommutative operations. Our process follows the tradition of work in verified lifting, including an encoding of correctness into SMT logic using synthesized inductive invariants and hand-crafted grammars for the CRDT state and runtime. Katara is able to automatically synthesize CRDTs for a wide variety of scenarios, from reproducing classic CRDTs to synthesizing novel designs based on specifications in existing literature. Crucially, our synthesized CRDTs are fully, automatically verified, eliminating entire classes of common errors and reducing the process of producing a new CRDT from a painstaking paper proof of correctness to a lightweight specification.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Shadaj Laddad, Conor Power, Mae Milano, Alvin Cheung, Joseph M. Hellerstein
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>Proceedings of the ACM in Programming Languages, Vol. 6, No. OOPSLA2, Article 173</em>,
+    
+    2022
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/doi/pdf/10.1145/3563336" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/languages-for-distribution/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gallifrey/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/hydro/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3563336" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/fearless-concurrency/" itemprop="url">A flexible type system for fearless concurrency</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    This paper proposes a new type system for concurrent programs, allowing threads to exchange complex object graphs without risking destructive data races. While this goal is shared by a rich history of past work, existing solutions either rely on strictly enforced heap invariants that prohibit natural programming patterns or demand pervasive annotations even for simple programming tasks. As a result, past systems cannot express intuitively simple code without unnatural rewrites or substantial annotation burdens. Our work avoids these pitfalls through a novel type system that provides sound reasoning about separation in the heap while remaining flexible enough to support a wide range of desirable heap manipulations. This new sweet spot is attained by enforcing a heap domination invariant similarly to prior work, but tempering it by allowing complex exceptions that add little annotation burden. Our results include: (1) code examples showing that common data structure manipulations which are difficult or impossible to express in prior work are natural and direct in our system, (2) a formal proof of correctness demonstrating that well-typed programs cannot encounter destructive data races at run time, and (3) an efficient type checker implemented in Gallina and OCaml.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Mae Milano, Joshua Turcotti, Andrew Myers
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>PLDI 2022: Proceedings of the 43rd ACM SIGPLAN International Conference on Programming Language Design and Implementation</em>,
+    
+    2022
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/doi/pdf/10.1145/3519939.3523443" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/fearless-concurrency/fearless-concurrency.bib">
+  Cite
+</button>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/fearless-concurrency/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gallifrey/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3519939.3523443" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/gallifrey/" itemprop="url">A Tour of Gallifrey, a Language for Geodistributed Programming</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Programming efficient distributed, concurrent systems requires new abstractions that go beyond traditional sequential programming. But programmers already have trouble getting sequential code right, so simplicity is essential. The core problem is that low-latency, high-availability access to data requires replication of mutable state. Keeping replicas fully consistent is expensive, so the question is how to expose asynchronously replicated objects to programmers in a way that allows them to reason simply about their code.  We propose an answer to this question in our ongoing work designing a new language, Gallifrey, which provides orthogonal replication through <em>restrictions</em> with <em>merge strategies</em>, <em>contingencies</em> for conflicts arising from concurrency, and <em>branches</em>, a novel concurrency control construct inspired by version control, to contain provisional behavior.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Mae Milano, Rolph Recto, Tom Magrino, Andrew Myers
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>3rd Summit on Advances in Programming Languages (SNAPL 2019)</em>,
+    
+    2019
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://drops.dagstuhl.de/opus/volltexte/2019/10554/pdf/LIPIcs-SNAPL-2019-11.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/gallifrey/gallifrey.bib">
+  Cite
+</button>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/languages-for-distribution/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gallifrey/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.4230/LIPIcs.SNAPL.2019.11" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        
+      
+
+      
+      
+      
+      
+        <h2>Talks</h2>
+        
+          
+            <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/talk/fearless-apple/" itemprop="url">A developer-centric approach to Fearless Concurrency</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    Aug 25, 2022
+    
+      11:00 AM
+      
+        &mdash; 12:00 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    Apple Computer, Swift Team
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Presenting a new type system for Fearless Concurrency
+    
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/fearless-concurrency/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gallifrey/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+          
+        
+          
+            <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/talk/fearless-pldi/" itemprop="url">Fearless Concurrency PLDI Talk</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    Jun 16, 2022
+    
+      1:30 PM
+      
+        &mdash; 1:50 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    PLDI 2022
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Presenting a new type system for Fearless Concurrency
+    
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/fearless-concurrency/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gallifrey/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=yUtZwdGhxhw" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+  </div>
+
+</div>
+
+          
+        
+          
+            <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/talk/gallifrey-conference-talk/" itemprop="url">Gallifrey SNAPL Talk</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    May 20, 2019
+    
+      11:00 AM
+      
+        &mdash; 11:30 AM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    SNAPL 2019
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Presenting Gallifrey, a new Java-like language for wide-area distributed programming
+    
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gallifrey/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+          
+        
+          
+            <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/talk/gallifrey-eglpls-talk/" itemprop="url">Gallifrey EGLPLS Talk</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    May 10, 2019
+    
+      3:00 PM
+      
+        &mdash; 3:30 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    EGLPLS 2019
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Presenting Gallifrey, a new Java-like language for wide-area distributed programming
+    
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/gallifrey/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+          
+        
+      
+    
+
+  </div>
+</article>
+
+
+<div class="article-container article-widget">
+  <div class="post-nav">
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="http://languagesforsyste.ms/project/hydro/" rel="next">Hydro: Software that Runs at Every Scale</a>
+  </div>
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="http://languagesforsyste.ms/project/languages-for-distribution/" rel="prev">Programming Replicated, Distributed Systems</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c&#43;&#43;.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//languagesforsystems.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.14cafafda844d960749b7551524d1c3a.js"></script>
+
+    
+
+  </body>
+</html>
+

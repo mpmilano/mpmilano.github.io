@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mae Milano on Mae Milano</title>
+    <link>http://languagesforsyste.ms/</link>
+    <description>Recent content in Mae Milano on Mae Milano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Katara: Synthesizing CRDTs with Verified Lifting</title>
+      <link>http://languagesforsyste.ms/publication/katara/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/publication/katara/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A developer-centric approach to Fearless Concurrency</title>
+      <link>http://languagesforsyste.ms/talk/fearless-apple/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/talk/fearless-apple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fearless Concurrency PLDI Talk</title>
+      <link>http://languagesforsyste.ms/talk/fearless-pldi/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/talk/fearless-pldi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bringing Fearless Concurrency to the Masses</title>
+      <link>http://languagesforsyste.ms/project/fearless-concurrency/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://languagesforsyste.ms/project/fearless-concurrency/</guid>
+      <description>&lt;p&gt;More details can be found in the &lt;a href=&#34;../../publication/fearless-concurrency/&#34;&gt;PLDI paper&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hydro: Software that Runs at Every Scale</title>
+      <link>http://languagesforsyste.ms/project/hydro/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://languagesforsyste.ms/project/hydro/</guid>
+      <description>&lt;p&gt;Please visit the &lt;a href=&#34;https://hydro.run&#34; target=&#34;_blank&#34;&gt;main Hydro website&lt;/a&gt; to learn more!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A flexible type system for fearless concurrency</title>
+      <link>http://languagesforsyste.ms/publication/fearless-concurrency/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/publication/fearless-concurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New Directions in Cloud Programming</title>
+      <link>http://languagesforsyste.ms/publication/pact/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 -0500</pubDate>
+      
+      <guid>http://languagesforsyste.ms/publication/pact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Dissertation is Now Available!</title>
+      <link>http://languagesforsyste.ms/post/dissertation/</link>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/post/dissertation/</guid>
+      <description>
+
+&lt;p&gt;After many years at Cornell University, I have finally completed my
+PhD journey!  My dissertation, entitled &amp;ldquo;Programming Safely with Weak
+(And Strong) Consistency&amp;rdquo;, is now available via
+&lt;a href=&#34;https://search.proquest.com/openview/1df00630d333277c5a74758c8f67c0d7/1.pdf&#34; target=&#34;_blank&#34;&gt;ProQuest&lt;/a&gt;
+(or &lt;a href=&#34;http://languagesforsyste.ms/files/thesis.pdf&#34;&gt;directly from me&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;that-document-is-364-pages-is-there-a-summary&#34;&gt;That document is 364 pages, is there a summary?&lt;/h2&gt;
+
+&lt;p&gt;Sure! The unifying theme of my dissertation is that
+writing programs against weak consistency is inherently difficult.
+My dissertation makes the job of writing safe programs against weak
+consistency easier, by introducing programming languages in which
+strong guarantees are defended from weakly-consistent influence, and
+in which programmers can write consistent-by-construction programs
+atop underlying weakly-consistent replication.&lt;/p&gt;
+
+&lt;p&gt;The first of these languages is MixT, a new language for writing
+&lt;em&gt;mixed-consistency transactions&lt;/em&gt;.  These atomic transactions can
+operate against data at multiple consistency levels simultaneously,
+and are equipped with an information-flow type system which guarantees
+weakly-consistent observations cannot influence strongly-consistent
+actions.&lt;/p&gt;
+
+&lt;p&gt;While mixed-consistency transactions can defend strong data from weak
+observations, they cannot ensure that fully-weak code is itself
+correct.  To address this, we leverage monotonic data types to
+introduce a core language of datalog-like predicates and triggers. In
+this language, programmers can write monotonic functions over a set of
+monotonic shared objects, ultimately resulting in a boolean.  These
+monotonic, boolean-returning functions are stable predicates: once
+they have become true, they remain true for all time.  Actions which
+are predicated on these stable predicates cannot be invalidated by
+missed or future updates.&lt;/p&gt;
+
+&lt;p&gt;This monotonic language sits at the core of Derecho, a new system for
+building strongly-consistent distributed systems via replicated state
+machines.  Derecho&amp;rsquo;s Shared State Table (SST) implements monotonic
+datatypes atop Remote Direct Memory Access (RDMA), resulting in a
+high-performance, asynchronous substrate on which to build Derecho&amp;rsquo;s
+monotonic language.  Using this SST, we have rephrased the Paxos
+delivery condition monotonically, granting strong consistency despite
+the underlying asynchronous replication.&lt;/p&gt;
+
+&lt;p&gt;Finally Gallifrey exposes the monotonic reasoning properties of
+Derecho&amp;rsquo;s core language directly to the user, safely integrating
+monotonic datatypes into a traditional Java-like programming language.
+Gallifrey allows any object to be asynchronously replicated via
+&lt;em&gt;Restrictions&lt;/em&gt; to its interface, allowing only those operations which
+are safe to call concurrently.  Datatypes shared under these
+restrictions can be viewed monotonically, using a language of
+predicates and triggers similar to that at the core of Derecho.  A
+novel &lt;em&gt;linear region&lt;/em&gt;-based type system enforces that shared object
+restrictions are respected.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-phd-takes-a-village&#34;&gt;A PhD Takes a Village&lt;/h2&gt;
+
+&lt;p&gt;And mine is no exception.  The kindness and generosity of the people
+who have surrounded me during my PhD never ceases to amaze.  Without
+the community surrounding me, attaining a PhD would be nearly
+impossible.  While my research and academic life has been touched by
+innumerable hands, I would like to specifically highlight the enormous
+assistance I have received from Andrew Myers, Ken Birman, Fabian
+Muehlboeck, Patrick LaFontaine and Danny Yang.  It is no exaggeration
+to say that without their help and guiding presence, I could never
+have completed this PhD.&lt;/p&gt;
+
+&lt;p&gt;To everyone who has helped me on this journey: thank you. Sincerely,
+thank you.&lt;/p&gt;
+
+&lt;p&gt;~Mae&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Derecho Tutorial</title>
+      <link>http://languagesforsyste.ms/talk/derecho-tutorial/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/talk/derecho-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Derecho&#39;s Intelligent Object Store</title>
+      <link>http://languagesforsyste.ms/talk/derecho-poster-aisys/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/talk/derecho-poster-aisys/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Tour of Gallifrey, a Language for Geodistributed Programming</title>
+      <link>http://languagesforsyste.ms/publication/gallifrey/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/publication/gallifrey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gallifrey SNAPL Talk</title>
+      <link>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gallifrey EGLPLS Talk</title>
+      <link>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Derecho: Fast State Machine Replication for Cloud Services</title>
+      <link>http://languagesforsyste.ms/publication/derecho/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/publication/derecho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Language for Mixing Consistency in Geodistributed Transactions: Technical Report</title>
+      <link>http://languagesforsyste.ms/publication/mixt-tr/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>http://languagesforsyste.ms/publication/mixt-tr/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

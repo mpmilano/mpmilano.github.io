@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Mae Milano</title>
+    <link>http://languagesforsyste.ms/home/</link>
+    <description>Recent content in Homes on Mae Milano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://languagesforsyste.ms/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://languagesforsyste.ms/home/hero_carousel/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/hero_carousel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
+      <link>http://languagesforsyste.ms/home/hero/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/hero/</guid>
+      <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://languagesforsyste.ms/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/about/</guid>
+      <description>Hi! I&amp;rsquo;m Mae! I&amp;rsquo;m a postdoc at University of California, Berkeley Sky, working under Joe Hellerstein. In 2020 I graduated with a PhD in programming languages and systems from Cornell University, advised by Andrew Myers. My work focuses on programming languages and abstractions for wide-area or large-scale distributed systems; really anything where the round-trip latency for communication is way too long, or the cost of coordination is way too high. I&amp;rsquo;m working on programming the Hydro project with Joe Hellerstein, and leading an initiative to design new languages for fearless concurrency.</description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>http://languagesforsyste.ms/home/skills/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>http://languagesforsyste.ms/home/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>http://languagesforsyste.ms/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Awards</title>
+      <link>http://languagesforsyste.ms/home/awards/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/awards/</guid>
+      <description> NDSEG Fellowship (2015) NSF GRFP Honorable Mention (2015) Cornell CS Department Service Award (multiple, latest 2020) Senior Prize in Computer Science (2013) Rose Rosengard Subotnik Prize (2012)  </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://languagesforsyste.ms/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical Reports</title>
+      <link>http://languagesforsyste.ms/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selected Talks</title>
+      <link>http://languagesforsyste.ms/home/talks_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/talks_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Talks</title>
+      <link>http://languagesforsyste.ms/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://languagesforsyste.ms/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>http://languagesforsyste.ms/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/teaching/</guid>
+      <description>CS 294-170: Graduate Seminar: Programming the Cloud The public clouds are the most powerful general-purpose computers ever assembled, allowing individuals to rent their power at unlimited scale, on demand. This makes &amp;ldquo;the cloud&amp;rdquo; the biggest game-changer in computing access since the adoption of the PDP-11 minicomputer in the early 1970s. However, unlike the advent of UNIX and C for PDP-11, an organic programming model has yet to emerge for the cloud.</description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>http://languagesforsyste.ms/home/service/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/service/</guid>
+      <description>Professional Service  Artifact Evaluation Committee: OOPSLA &amp;lsquo;15, POPL &amp;lsquo;17, PLDI &amp;lsquo;19, OOPSLA &amp;lsquo;23
+ Program Committee: PaPoC &amp;lsquo;22, EuroDW &amp;lsquo;21, &amp;lsquo;22
+ External Review Committee: OOPSLA &amp;lsquo;23
+  Outreach  CCF: Member of the selection committee *SIGPLAN-M: Mentor since 2020 SPLASH (2013,15-16): Instructor at SPLASH Cornell and MIT, lecturing on video game music
+ EYH (2014-19): Workshop leader and designer at Expanding Your Horizons, a one-day workshop aimed at encouraging middle school girls to embrace STEM topics.</description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>http://languagesforsyste.ms/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://languagesforsyste.ms/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://languagesforsyste.ms/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
