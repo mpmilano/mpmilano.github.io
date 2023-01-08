@@ -12,6 +12,14 @@
     
     <url>
     
+      <loc>http://languagesforsyste.ms/talk/researching-with-undergraduates/</loc>
+      <lastmod>2022-12-20T00:00:00-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>http://languagesforsyste.ms/publication/katara/</loc>
       <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
@@ -363,6 +371,15 @@
     
       <loc>http://languagesforsyste.ms/tags/transactions/</loc>
       <lastmod>2021-12-31T09:57:18-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://languagesforsyste.ms/tags/teaching/</loc>
+      <lastmod>2022-12-20T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
