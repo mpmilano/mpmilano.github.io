@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://languagesforsyste.ms/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Derecho: Fast State Machine Replication for Cloud Services</title>
       <link>http://languagesforsyste.ms/publication/derecho/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/derecho/</guid>
       <description></description>

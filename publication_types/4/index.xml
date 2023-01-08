@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="http://languagesforsyste.ms/publication_types/4/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>A Language for Mixing Consistency in Geodistributed Transactions: Technical Report</title>
       <link>http://languagesforsyste.ms/publication/mixt-tr/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0800</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/mixt-tr/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Building Smart Memories and Cloud Services with Derecho</title>
       <link>http://languagesforsyste.ms/publication/derecho-tr/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/derecho-tr/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Mixing Consistency in Geodistributed Transactions: Technical Report (old)</title>
       <link>http://languagesforsyste.ms/publication/mm-16-tr/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/mm-16-tr/</guid>
       <description></description>

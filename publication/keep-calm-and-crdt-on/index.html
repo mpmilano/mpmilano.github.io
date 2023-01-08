@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="This talk presents a user-centric overview of a new type system for concurrent programs, allowing threads to exchange complex, arbitrarily connected object graphs without risking destructive data races. While this goal is shared by a rich history of past work, existing solutions either rely on strictly enforced heap invariants that prohibit natural programming patterns or demand pervasive annotations that bring formidable formal overhead to the simplest programming tasks. As a result, past systems cannot express intuitively simple code without surprising and unnatural rewrites. Our work avoids these pitfalls through a novel type system that provides sound reasoning about separation in the heap while remaining amenable to whatever style of heap manipulations the programmer desires. This sweet spot is attained by tracking an invariant as strong as prior work, but allowing arbitrary violations to arise and persist across the program until recovery is needed. We present this system with large code examples demonstrating natural expression of patterns prior work balks at, a formal proof of correctness—that well-typed programs cannot encounter destructive data races at run time—and an efficient type checker implemented in Gallina and Ocaml.">
+  <meta name="description" content="Despite decades of research and practical experience, developers have few tools for programming reliable distributed applications without resorting to expensive coordination techniques. Conflict-free replicated datatypes (CRDTs) are a promising line of work that enable coordination-free replication and offer certain eventual consistency guarantees in a relatively simple object-oriented API. Yet CRDT guarantees extend only to data updates; observations of CRDT state are unconstrained and unsafe. We propose an agenda that embraces the simplicity of CRDTs, but provides richer, more uniform guarantees. We extend CRDTs with a query model that reasons about which queries are safe without coordination by applying monotonicity results from the CALM Theorem, and lay out a larger agenda for developing CRDT data stores that let developers safely and efficiently interact with replicated application state.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://languagesforsyste.ms/talk/fearless-apple/">
+  <link rel="alternate" hreflang="en-us" href="http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/">
 
   
 
@@ -102,7 +102,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="http://languagesforsyste.ms/talk/fearless-apple/">
+  <link rel="canonical" href="http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -110,25 +110,25 @@
   <meta property="twitter:creator" content="@mbpmilano">
   
   <meta property="og:site_name" content="Mae Milano">
-  <meta property="og:url" content="http://languagesforsyste.ms/talk/fearless-apple/">
-  <meta property="og:title" content="A developer-centric approach to Fearless Concurrency | Mae Milano">
-  <meta property="og:description" content="This talk presents a user-centric overview of a new type system for concurrent programs, allowing threads to exchange complex, arbitrarily connected object graphs without risking destructive data races. While this goal is shared by a rich history of past work, existing solutions either rely on strictly enforced heap invariants that prohibit natural programming patterns or demand pervasive annotations that bring formidable formal overhead to the simplest programming tasks. As a result, past systems cannot express intuitively simple code without surprising and unnatural rewrites. Our work avoids these pitfalls through a novel type system that provides sound reasoning about separation in the heap while remaining amenable to whatever style of heap manipulations the programmer desires. This sweet spot is attained by tracking an invariant as strong as prior work, but allowing arbitrary violations to arise and persist across the program until recovery is needed. We present this system with large code examples demonstrating natural expression of patterns prior work balks at, a formal proof of correctness—that well-typed programs cannot encounter destructive data races at run time—and an efficient type checker implemented in Gallina and Ocaml.">
+  <meta property="og:url" content="http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/">
+  <meta property="og:title" content="Keep CALM and CRDT On | Mae Milano">
+  <meta property="og:description" content="Despite decades of research and practical experience, developers have few tools for programming reliable distributed applications without resorting to expensive coordination techniques. Conflict-free replicated datatypes (CRDTs) are a promising line of work that enable coordination-free replication and offer certain eventual consistency guarantees in a relatively simple object-oriented API. Yet CRDT guarantees extend only to data updates; observations of CRDT state are unconstrained and unsafe. We propose an agenda that embraces the simplicity of CRDTs, but provides richer, more uniform guarantees. We extend CRDTs with a query model that reasons about which queries are safe without coordination by applying monotonicity results from the CALM Theorem, and lay out a larger agenda for developing CRDT data stores that let developers safely and efficiently interact with replicated application state.">
   
   
     
   <meta property="og:image" content="http://languagesforsyste.ms/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2022-06-20T00:00:00-07:00">
+  <meta property="article:published_time" content="2023-01-05T00:00:00-08:00">
   
-  <meta property="article:modified_time" content="2022-11-22T17:15:53-05:00">
-  
-
+  <meta property="article:modified_time" content="2023-01-07T20:49:13-05:00">
   
 
   
 
-  <title>A developer-centric approach to Fearless Concurrency | Mae Milano</title>
+  
+
+  <title>Keep CALM and CRDT On | Mae Milano</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -386,7 +386,7 @@
   </div>
 </nav>
 
-<div class="pub" itemscope itemtype="http://schema.org/Event">
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
 
@@ -407,7 +407,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">A developer-centric approach to Fearless Concurrency</h1>
+  <h1 itemprop="name">Keep CALM and CRDT On</h1>
 
   
 
@@ -421,10 +421,19 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Shadaj Laddad</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Conor Power</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">Mae Milano</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Joshua Turcotti</span>
+      <span itemprop="name">Alvin Cheung</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Joseph M. Hellerstein</span>
     </span>
     
   </div>
@@ -434,9 +443,9 @@
     
         Last updated on
     
-    <meta content="2022-06-20 00:00:00 -0700 PDT" itemprop="datePublished">
-    <time datetime="2022-11-22 17:15:53 -0500 -0500" itemprop="dateModified">
-      Nov 22, 2022
+    <meta content="2023-01-05 00:00:00 -0800 PST" itemprop="datePublished">
+    <time datetime="2023-01-07 20:49:13 -0500 -0500" itemprop="dateModified">
+      Jan 7, 2023
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -448,7 +457,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/talk/fearless-apple/#disqus_thread"></a>
+  <a href="/publication/keep-calm-and-crdt-on/#disqus_thread"></a>
   
 
   
@@ -459,28 +468,28 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=A%20developer-centric%20approach%20to%20Fearless%20Concurrency&amp;url=http%3a%2f%2flanguagesforsyste.ms%2ftalk%2ffearless-apple%2f"
+         href="https://twitter.com/intent/tweet?text=Keep%20CALM%20and%20CRDT%20On&amp;url=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fkeep-calm-and-crdt-on%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flanguagesforsyste.ms%2ftalk%2ffearless-apple%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fkeep-calm-and-crdt-on%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flanguagesforsyste.ms%2ftalk%2ffearless-apple%2f&amp;title=A%20developer-centric%20approach%20to%20Fearless%20Concurrency"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fkeep-calm-and-crdt-on%2f&amp;title=Keep%20CALM%20and%20CRDT%20On"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2flanguagesforsyste.ms%2ftalk%2ffearless-apple%2f&amp;title=A%20developer-centric%20approach%20to%20Fearless%20Concurrency"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fkeep-calm-and-crdt-on%2f&amp;title=Keep%20CALM%20and%20CRDT%20On"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
@@ -534,7 +543,13 @@
 
 
   
+    
+  
 
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://www.vldb.org/pvldb/vol16/p856-power.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
 
 
 
@@ -543,7 +558,7 @@
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/fearless-concurrency/">
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/languages-for-distribution/">
     Project
   </a>
   
@@ -554,6 +569,11 @@
   </a>
   
 
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/hydro/">
+    Project
+  </a>
+  
 
 
 
@@ -561,6 +581,11 @@
 
 
 
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.14778/3574245.3574268" target="_blank" rel="noopener">
+  DOI
+</a>
 
 
 
@@ -575,8 +600,42 @@
   <div class="article-container">
 
     
-      <h3>Abstract</h3>
-      <p class="pub-abstract" itemprop="text">This talk presents a user-centric overview of a new type system for concurrent programs, allowing threads to exchange complex, arbitrarily connected object graphs without risking destructive data races. While this goal is shared by a rich history of past work, existing solutions either rely on strictly enforced heap invariants that prohibit natural programming patterns or demand pervasive annotations that bring formidable formal overhead to the simplest programming tasks. As a result, past systems cannot express intuitively simple code without surprising and unnatural rewrites. Our work avoids these pitfalls through a novel type system that provides sound reasoning about separation in the heap while remaining amenable to whatever style of heap manipulations the programmer desires. This sweet spot is attained by tracking an invariant as strong as prior work, but allowing arbitrary violations to arise and persist across the program until recovery is needed. We present this system with large code examples demonstrating natural expression of patterns prior work balks at, a formal proof of correctness—that well-typed programs cannot encounter destructive data races at run time—and an efficient type checker implemented in Gallina and Ocaml.</p>
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Despite decades of research and practical experience, developers have few tools for programming reliable distributed applications without resorting to expensive coordination techniques. Conflict-free replicated datatypes (CRDTs) are a promising line of work that enable coordination-free replication and offer certain eventual consistency guarantees in a relatively simple object-oriented API. Yet CRDT guarantees extend only to data updates; observations of CRDT state are unconstrained and unsafe. We propose an agenda that embraces the simplicity of CRDTs, but provides richer, more uniform guarantees. We extend CRDTs with a query model that reasons about which queries are safe without coordination by applying monotonicity results from the CALM Theorem, and lay out a larger agenda for developing CRDT data stores that let developers safely and efficiently interact with replicated application state.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>Proceedings of the VLDB endowment, Vol. 16 No. 4</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
     
 
     <div class="row">
@@ -585,63 +644,19 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
-            
-            Aug 25, 2022
-            <div class="talk-time">
-              
-                11:00 AM
-                
-                  &mdash; 12:00 PM
-                
-              
-            </div>
+            January, 2023
           </div>
         </div>
       </div>
       <div class="col-md-1"></div>
     </div>
-    <div class="d-md-none space-below"></div>
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Event</div>
-          <div class="col-12 col-md-9">
-            
-            Apple Computer, Swift Team
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Location</div>
-          <div class="col-12 col-md-9">Cupertino, California</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
+    <div class="d-sm-none space-below"></div>
 
     <div class="space-below"></div>
 
-    <div class="article-style">
-      
-    </div>
+    <div class="article-style"></div>
 
     
-
-
-
 
     
 
@@ -651,99 +666,6 @@
 
 
 
-
-<div class="media author-card" itemscope itemtype="http://schema.org/Person">
-  
-  <img class="portrait mr-3" src="/img/pride-face-nobackground.png" itemprop="image" alt="Avatar">
-  
-  <div class="media-body">
-    <h5 class="card-title" itemprop="name"><a href="/">Mae Milano</a></h5>
-    <h6 class="card-subtitle">PhD, Programming Languages and Systems</h6>
-    
-    <ul class="network-icon" aria-hidden="true">
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-      <li>
-        <a itemprop="sameAs" href="mailto:mpmilano@cs.berkeley.edu" >
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://twitter.com/mbpmilano" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=1XP8XcAAAAAJ" target="_blank" rel="noopener">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://github.com/mpmilano" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="/files/milano-cv.pdf" >
-          <i class="ai ai-cv"></i>
-        </a>
-      </li>
-      
-    </ul>
-  </div>
-</div>
 
 
 
@@ -758,7 +680,7 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="http://languagesforsyste.ms/talk/fearless-pldi/" rel="prev">Fearless Concurrency PLDI Talk</a>
+    <a href="http://languagesforsyste.ms/publication/katara/" rel="prev">Katara: Synthesizing CRDTs with Verified Lifting</a>
   </div>
   
 </div>

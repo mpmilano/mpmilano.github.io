@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Keep CALM and CRDT On</title>
+      <link>http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 -0800</pubDate>
+      
+      <guid>http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Katara: Synthesizing CRDTs with Verified Lifting</title>
       <link>http://languagesforsyste.ms/publication/katara/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/katara/</guid>
       <description></description>
@@ -22,7 +31,7 @@
     <item>
       <title>A developer-centric approach to Fearless Concurrency</title>
       <link>http://languagesforsyste.ms/talk/fearless-apple/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/talk/fearless-apple/</guid>
       <description></description>
@@ -31,7 +40,7 @@
     <item>
       <title>Fearless Concurrency PLDI Talk</title>
       <link>http://languagesforsyste.ms/talk/fearless-pldi/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/talk/fearless-pldi/</guid>
       <description></description>
@@ -60,7 +69,7 @@
     <item>
       <title>A flexible type system for fearless concurrency</title>
       <link>http://languagesforsyste.ms/publication/fearless-concurrency/</link>
-      <pubDate>Thu, 09 Jun 2022 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/fearless-concurrency/</guid>
       <description></description>
@@ -69,7 +78,7 @@
     <item>
       <title>New Directions in Cloud Programming</title>
       <link>http://languagesforsyste.ms/publication/pact/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 -0800</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/pact/</guid>
       <description></description>
@@ -78,7 +87,7 @@
     <item>
       <title>My Dissertation is Now Available!</title>
       <link>http://languagesforsyste.ms/post/dissertation/</link>
-      <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/post/dissertation/</guid>
       <description>
@@ -159,7 +168,7 @@ thank you.&lt;/p&gt;
     <item>
       <title>Derecho Tutorial</title>
       <link>http://languagesforsyste.ms/talk/derecho-tutorial/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/talk/derecho-tutorial/</guid>
       <description></description>
@@ -168,7 +177,7 @@ thank you.&lt;/p&gt;
     <item>
       <title>Derecho&#39;s Intelligent Object Store</title>
       <link>http://languagesforsyste.ms/talk/derecho-poster-aisys/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/talk/derecho-poster-aisys/</guid>
       <description></description>
@@ -177,7 +186,7 @@ thank you.&lt;/p&gt;
     <item>
       <title>A Tour of Gallifrey, a Language for Geodistributed Programming</title>
       <link>http://languagesforsyste.ms/publication/gallifrey/</link>
-      <pubDate>Thu, 16 May 2019 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/gallifrey/</guid>
       <description></description>
@@ -186,7 +195,7 @@ thank you.&lt;/p&gt;
     <item>
       <title>Gallifrey SNAPL Talk</title>
       <link>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</link>
-      <pubDate>Thu, 16 May 2019 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</guid>
       <description></description>
@@ -195,7 +204,7 @@ thank you.&lt;/p&gt;
     <item>
       <title>Gallifrey EGLPLS Talk</title>
       <link>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 10 May 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</guid>
       <description></description>
@@ -204,18 +213,9 @@ thank you.&lt;/p&gt;
     <item>
       <title>Derecho: Fast State Machine Replication for Cloud Services</title>
       <link>http://languagesforsyste.ms/publication/derecho/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/publication/derecho/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Language for Mixing Consistency in Geodistributed Transactions: Technical Report</title>
-      <link>http://languagesforsyste.ms/publication/mixt-tr/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
-      
-      <guid>http://languagesforsyste.ms/publication/mixt-tr/</guid>
       <description></description>
     </item>
     

@@ -4,8 +4,16 @@
     
     <url>
     
+      <loc>http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</loc>
+      <lastmod>2023-01-07T20:49:13-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>http://languagesforsyste.ms/publication/katara/</loc>
-      <lastmod>2022-10-01T00:00:00-04:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
   
@@ -13,7 +21,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/talk/fearless-apple/</loc>
-      <lastmod>2022-06-20T00:00:00-04:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
   
@@ -21,7 +29,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/talk/fearless-pldi/</loc>
-      <lastmod>2022-06-20T00:00:00-04:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
   
@@ -29,7 +37,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/project/fearless-concurrency/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
   
@@ -37,7 +45,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/project/hydro/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
   
@@ -45,7 +53,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/publication/fearless-concurrency/</loc>
-      <lastmod>2022-06-09T00:00:00-04:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
   
@@ -53,7 +61,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/publication/pact/</loc>
-      <lastmod>2021-01-13T00:00:00-05:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
   
@@ -229,7 +237,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/publication_types/1/</loc>
-      <lastmod>2022-10-01T00:00:00-04:00</lastmod>
+      <lastmod>2023-01-07T20:49:13-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -264,7 +272,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/tags/concurrency/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -282,7 +290,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/tags/distributed-systems/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -291,7 +299,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/tags/linear-types/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -309,7 +317,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/tags/ownership/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -318,7 +326,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/tags/programming-languages/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -327,7 +335,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/project/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -336,7 +344,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/publication_types/</loc>
-      <lastmod>2022-10-01T00:00:00-04:00</lastmod>
+      <lastmod>2023-01-07T20:49:13-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -345,7 +353,7 @@
     <url>
     
       <loc>http://languagesforsyste.ms/tags/</loc>
-      <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
