@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Looking for new PhD students!</title>
+      <link>http://languagesforsyste.ms/post/looking-for-students/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 -0700</pubDate>
+      
+      <guid>http://languagesforsyste.ms/post/looking-for-students/</guid>
+      <description>I&amp;rsquo;m actively looking for new PhD students! Hey! If you&amp;rsquo;ve found this page, you&amp;rsquo;re (hopefully) looking at me as a potential advisor for a PhD in computer science. Welcome!
+What might we work on together? My research focuses on designing new Programming Languages to solve problems in Distributed Systems. I also have active, exciting projects purely in PL or DS.
+In systems, I&amp;rsquo;m excited to build new abstractions and systems for wide-area, local-first, or large-scale distributed systems; really anything where the round-trip latency for communication is way too long, or the cost of coordination is way too high.</description>
+    </item>
+    
+    <item>
       <title>My Dissertation is Now Available!</title>
       <link>http://languagesforsyste.ms/post/dissertation/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 -0700</pubDate>

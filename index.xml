@@ -11,6 +11,94 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Looking for new PhD students!</title>
+      <link>http://languagesforsyste.ms/post/looking-for-students/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 -0700</pubDate>
+      
+      <guid>http://languagesforsyste.ms/post/looking-for-students/</guid>
+      <description>
+
+&lt;h2 id=&#34;i-m-actively-looking-for-new-phd-students&#34;&gt;I&amp;rsquo;m actively looking for new PhD students!&lt;/h2&gt;
+
+&lt;p&gt;Hey! If you&amp;rsquo;ve found this page, you&amp;rsquo;re (hopefully) looking at me as a
+potential advisor for a PhD in computer science.  Welcome!&lt;/p&gt;
+
+&lt;h2 id=&#34;what-might-we-work-on-together&#34;&gt;What might we work on together?&lt;/h2&gt;
+
+&lt;p&gt;My research focuses on &lt;strong&gt;designing new
+Programming Languages to solve problems in Distributed Systems&lt;/strong&gt;.  I
+also have active, exciting projects purely in PL or DS.&lt;/p&gt;
+
+&lt;p&gt;In systems, I&amp;rsquo;m excited to build &lt;strong&gt;new abstractions and systems&lt;/strong&gt; for wide-area,
+local-first, or large-scale distributed systems; really anything where
+the round-trip latency for communication is way too long, or the cost
+of coordination is way too high.  Active projects in this vein include
+the &lt;a href=&#34;https://hydro.run&#34; target=&#34;_blank&#34;&gt;Hydro project&lt;/a&gt; with Berkeley, the &lt;a href=&#34;https://derecho-project.github.io/&#34; target=&#34;_blank&#34;&gt;Derecho
+project&lt;/a&gt; with Cornell and Stevens,
+and some ongoing work with &lt;a href=&#34;http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/&#34;&gt;CRDTs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In Programming Languages, I&amp;rsquo;m excited to build &lt;strong&gt;new languages and type
+systems&lt;/strong&gt; which make specific classes of bugs easier for programmers to
+avoid.  This includes things like avoiding concurrent races to ensure
+&lt;a href=&#34;http://languagesforsyste.ms/project/fearless-concurrency&#34;&gt;safe concurrency&lt;/a&gt;, or building &lt;a href=&#34;morphic-lang.org&#34; target=&#34;_blank&#34;&gt;new
+functional languages&lt;/a&gt; which feature true zero-cost
+abstractions.  One of my overriding goals in this work is to keep the
+&lt;em&gt;programmer-facing&lt;/em&gt; complexity low; while the type system internals
+can get complex, the user experience should remain friendly. My
+ultimate metric: does the language make programs
+&lt;strong&gt;meaningfully easier to &amp;ldquo;get right&amp;rdquo;&lt;/strong&gt; while remaining &lt;strong&gt;easy for existing
+programmers&lt;/strong&gt; in the domain to understand?&lt;/p&gt;
+
+&lt;p&gt;At the intersection, I&amp;rsquo;ve got lots of ideas on how to build &lt;strong&gt;new
+languages that make distributed systems easier&lt;/strong&gt; to write and run.
+Projects in this space include &lt;a href=&#34;http://languagesforsyste.ms/publication/katara&#34;&gt;using program synthesis to generate
+CRDTs&lt;/a&gt; that don&amp;rsquo;t screw with programmer
+expectations, &lt;a href=&#34;http://languagesforsyste.ms/publication/mixt&#34;&gt;new transactions languages&lt;/a&gt; that
+keep distributed transactions consistent, or even &lt;a href=&#34;http://languagesforsyste.ms/project/gallifrey&#34;&gt;full programming
+language designs&lt;/a&gt; which rethink how objects can be
+shared across a distributed program.  I&amp;rsquo;m generally excited to think
+about how writing communicating programs or programming with
+distributed storage can be made easier, by taking into account the
+&lt;em&gt;semantics of the programs&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-does-one-apply&#34;&gt;How does one apply?&lt;/h2&gt;
+
+&lt;p&gt;Princeton&amp;rsquo;s Computer Science department features a centralized process
+for PhD applications; everyone fills out an online application via the
+&lt;a href=&#34;https://gradschool.princeton.edu/admission-onboarding/apply&#34; target=&#34;_blank&#34;&gt;graduate school&amp;rsquo;s application
+portal&lt;/a&gt;,
+which includes an opportunity to note particular areas of interest. If
+you&amp;rsquo;re particularly excited to work with any particular faculty (like,
+perhaps, me!) then please be sure to &lt;strong&gt;mention the faculty&amp;rsquo;s name&lt;/strong&gt;
+somewhere in your application materials&amp;mdash;typically the research
+statement.  You can learn more about the program at the &lt;a href=&#34;https://www.cs.princeton.edu/grad/&#34; target=&#34;_blank&#34;&gt;grad program
+main page&lt;/a&gt;, and more about the
+application itself at the &lt;a href=&#34;https://www.cs.princeton.edu/grad/admissions-requirements&#34; target=&#34;_blank&#34;&gt;admissions
+requirements&lt;/a&gt;
+page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The application Deadline is December 15th&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;should-i-reach-out-to-you-before-applying&#34;&gt;Should I reach out to you before applying?&lt;/h2&gt;
+
+&lt;p&gt;In short, it&amp;rsquo;s not necessary.&lt;/p&gt;
+
+&lt;p&gt;Many students are encouraged to reach out and directly contact the
+faculty they want to work with, usually via email. If we&amp;rsquo;ve got a good
+research match, or you&amp;rsquo;ve come across my work before and have ideas of
+where we could take a collaboration, then by all means feel free to
+reach out! But please know that this &lt;strong&gt;does not affect how&amp;mdash;or if&amp;mdash;I
+will read your application&lt;/strong&gt;.  The best way to ensure that I look at
+your application is to &lt;strong&gt;mention my name&lt;/strong&gt; somewhere in your
+application.  And if you &lt;em&gt;have&lt;/em&gt; emailed me or another faculty member
+without getting a response, then don&amp;rsquo;t fret! Faculty get a huge volume
+of email from prospective students, and it&amp;rsquo;s easy to accidentally miss
+a few.  As long as you apply to the department, we &lt;em&gt;will&lt;/em&gt; see your
+application, even if we&amp;rsquo;ve missed your email!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Keep CALM and CRDT On</title>
       <link>http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 -0800</pubDate>
@@ -207,15 +295,6 @@ thank you.&lt;/p&gt;
       <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
       
       <guid>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gallifrey EGLPLS Talk</title>
-      <link>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 -0700</pubDate>
-      
-      <guid>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</guid>
       <description></description>
     </item>
     
