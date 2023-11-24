@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent Talks on Mae Milano</title>
-    <link>http://languagesforsyste.ms/talk/</link>
+    <link>https://languagesforsyste.ms/talk/</link>
     <description>Recent content in Recent Talks on Mae Milano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
     
-	<atom:link href="http://languagesforsyste.ms/talk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://languagesforsyste.ms/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Researching with Undergraduates: a Curricular Approach</title>
-      <link>http://languagesforsyste.ms/talk/researching-with-undergraduates/</link>
+      <link>https://languagesforsyste.ms/talk/researching-with-undergraduates/</link>
       <pubDate>Tue, 20 Dec 2022 00:00:00 -0800</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/researching-with-undergraduates/</guid>
+      <guid>https://languagesforsyste.ms/talk/researching-with-undergraduates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A developer-centric approach to Fearless Concurrency</title>
-      <link>http://languagesforsyste.ms/talk/fearless-apple/</link>
+      <link>https://languagesforsyste.ms/talk/fearless-apple/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/fearless-apple/</guid>
+      <guid>https://languagesforsyste.ms/talk/fearless-apple/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fearless Concurrency PLDI Talk</title>
-      <link>http://languagesforsyste.ms/talk/fearless-pldi/</link>
+      <link>https://languagesforsyste.ms/talk/fearless-pldi/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/fearless-pldi/</guid>
+      <guid>https://languagesforsyste.ms/talk/fearless-pldi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Derecho Tutorial</title>
-      <link>http://languagesforsyste.ms/talk/derecho-tutorial/</link>
+      <link>https://languagesforsyste.ms/talk/derecho-tutorial/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/derecho-tutorial/</guid>
+      <guid>https://languagesforsyste.ms/talk/derecho-tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Derecho&#39;s Intelligent Object Store</title>
-      <link>http://languagesforsyste.ms/talk/derecho-poster-aisys/</link>
+      <link>https://languagesforsyste.ms/talk/derecho-poster-aisys/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/derecho-poster-aisys/</guid>
+      <guid>https://languagesforsyste.ms/talk/derecho-poster-aisys/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gallifrey SNAPL Talk</title>
-      <link>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</link>
+      <link>https://languagesforsyste.ms/talk/gallifrey-conference-talk/</link>
       <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</guid>
+      <guid>https://languagesforsyste.ms/talk/gallifrey-conference-talk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gallifrey EGLPLS Talk</title>
-      <link>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</link>
+      <link>https://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</guid>
+      <guid>https://languagesforsyste.ms/talk/gallifrey-eglpls-talk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MixT PLDI Talk</title>
-      <link>http://languagesforsyste.ms/talk/mixt/</link>
+      <link>https://languagesforsyste.ms/talk/mixt/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/mixt/</guid>
+      <guid>https://languagesforsyste.ms/talk/mixt/</guid>
       <description></description>
     </item>
     

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mae Milano on Mae Milano</title>
-    <link>http://languagesforsyste.ms/</link>
+    <link>https://languagesforsyste.ms/</link>
     <description>Recent content in Mae Milano on Mae Milano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Looking for new PhD students!</title>
-      <link>http://languagesforsyste.ms/post/looking-for-students/</link>
+      <link>https://languagesforsyste.ms/post/looking-for-students/</link>
       <pubDate>Fri, 20 Oct 2023 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/post/looking-for-students/</guid>
+      <guid>https://languagesforsyste.ms/post/looking-for-students/</guid>
       <description>
 
 &lt;h2 id=&#34;i-m-actively-looking-for-new-phd-students&#34;&gt;I&amp;rsquo;m actively looking for new PhD students!&lt;/h2&gt;
@@ -37,12 +37,12 @@ the round-trip latency for communication is way too long, or the cost
 of coordination is way too high.  Active projects in this vein include
 the &lt;a href=&#34;https://hydro.run&#34; target=&#34;_blank&#34;&gt;Hydro project&lt;/a&gt; with Berkeley, the &lt;a href=&#34;https://derecho-project.github.io/&#34; target=&#34;_blank&#34;&gt;Derecho
 project&lt;/a&gt; with Cornell and Stevens,
-and some ongoing work with &lt;a href=&#34;http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/&#34;&gt;CRDTs&lt;/a&gt;.&lt;/p&gt;
+and some ongoing work with &lt;a href=&#34;https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/&#34;&gt;CRDTs&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In Programming Languages, I&amp;rsquo;m excited to build &lt;strong&gt;new languages and type
 systems&lt;/strong&gt; which make specific classes of bugs easier for programmers to
 avoid.  This includes things like avoiding concurrent races to ensure
-&lt;a href=&#34;http://languagesforsyste.ms/project/fearless-concurrency&#34;&gt;safe concurrency&lt;/a&gt;, or building &lt;a href=&#34;morphic-lang.org&#34; target=&#34;_blank&#34;&gt;new
+&lt;a href=&#34;https://languagesforsyste.ms/project/fearless-concurrency&#34;&gt;safe concurrency&lt;/a&gt;, or building &lt;a href=&#34;morphic-lang.org&#34; target=&#34;_blank&#34;&gt;new
 functional languages&lt;/a&gt; which feature true zero-cost
 abstractions.  One of my overriding goals in this work is to keep the
 &lt;em&gt;programmer-facing&lt;/em&gt; complexity low; while the type system internals
@@ -53,10 +53,10 @@ programmers&lt;/strong&gt; in the domain to understand?&lt;/p&gt;
 
 &lt;p&gt;At the intersection, I&amp;rsquo;ve got lots of ideas on how to build &lt;strong&gt;new
 languages that make distributed systems easier&lt;/strong&gt; to write and run.
-Projects in this space include &lt;a href=&#34;http://languagesforsyste.ms/publication/katara&#34;&gt;using program synthesis to generate
+Projects in this space include &lt;a href=&#34;https://languagesforsyste.ms/publication/katara&#34;&gt;using program synthesis to generate
 CRDTs&lt;/a&gt; that don&amp;rsquo;t screw with programmer
-expectations, &lt;a href=&#34;http://languagesforsyste.ms/publication/mixt&#34;&gt;new transactions languages&lt;/a&gt; that
-keep distributed transactions consistent, or even &lt;a href=&#34;http://languagesforsyste.ms/project/gallifrey&#34;&gt;full programming
+expectations, &lt;a href=&#34;https://languagesforsyste.ms/publication/mixt&#34;&gt;new transactions languages&lt;/a&gt; that
+keep distributed transactions consistent, or even &lt;a href=&#34;https://languagesforsyste.ms/project/gallifrey&#34;&gt;full programming
 language designs&lt;/a&gt; which rethink how objects can be
 shared across a distributed program.  I&amp;rsquo;m generally excited to think
 about how writing communicating programs or programming with
@@ -103,100 +103,100 @@ application, even if we&amp;rsquo;ve missed your email!&lt;/p&gt;
     
     <item>
       <title>Keep CALM and CRDT On</title>
-      <link>http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</link>
+      <link>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 -0800</pubDate>
       
-      <guid>http://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</guid>
+      <guid>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Researching with Undergraduates: a Curricular Approach</title>
-      <link>http://languagesforsyste.ms/talk/researching-with-undergraduates/</link>
+      <link>https://languagesforsyste.ms/talk/researching-with-undergraduates/</link>
       <pubDate>Tue, 20 Dec 2022 00:00:00 -0800</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/researching-with-undergraduates/</guid>
+      <guid>https://languagesforsyste.ms/talk/researching-with-undergraduates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Katara: Synthesizing CRDTs with Verified Lifting</title>
-      <link>http://languagesforsyste.ms/publication/katara/</link>
+      <link>https://languagesforsyste.ms/publication/katara/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/publication/katara/</guid>
+      <guid>https://languagesforsyste.ms/publication/katara/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A developer-centric approach to Fearless Concurrency</title>
-      <link>http://languagesforsyste.ms/talk/fearless-apple/</link>
+      <link>https://languagesforsyste.ms/talk/fearless-apple/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/fearless-apple/</guid>
+      <guid>https://languagesforsyste.ms/talk/fearless-apple/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fearless Concurrency PLDI Talk</title>
-      <link>http://languagesforsyste.ms/talk/fearless-pldi/</link>
+      <link>https://languagesforsyste.ms/talk/fearless-pldi/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/fearless-pldi/</guid>
+      <guid>https://languagesforsyste.ms/talk/fearless-pldi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bringing Fearless Concurrency to the Masses</title>
-      <link>http://languagesforsyste.ms/project/fearless-concurrency/</link>
+      <link>https://languagesforsyste.ms/project/fearless-concurrency/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://languagesforsyste.ms/project/fearless-concurrency/</guid>
+      <guid>https://languagesforsyste.ms/project/fearless-concurrency/</guid>
       <description>&lt;p&gt;More details can be found in the &lt;a href=&#34;../../publication/fearless-concurrency/&#34;&gt;PLDI paper&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Hydro: Software that Runs at Every Scale</title>
-      <link>http://languagesforsyste.ms/project/hydro/</link>
+      <link>https://languagesforsyste.ms/project/hydro/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://languagesforsyste.ms/project/hydro/</guid>
+      <guid>https://languagesforsyste.ms/project/hydro/</guid>
       <description>&lt;p&gt;Please visit the &lt;a href=&#34;https://hydro.run&#34; target=&#34;_blank&#34;&gt;main Hydro website&lt;/a&gt; to learn more!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A flexible type system for fearless concurrency</title>
-      <link>http://languagesforsyste.ms/publication/fearless-concurrency/</link>
+      <link>https://languagesforsyste.ms/publication/fearless-concurrency/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/publication/fearless-concurrency/</guid>
+      <guid>https://languagesforsyste.ms/publication/fearless-concurrency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New Directions in Cloud Programming</title>
-      <link>http://languagesforsyste.ms/publication/pact/</link>
+      <link>https://languagesforsyste.ms/publication/pact/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 -0800</pubDate>
       
-      <guid>http://languagesforsyste.ms/publication/pact/</guid>
+      <guid>https://languagesforsyste.ms/publication/pact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My Dissertation is Now Available!</title>
-      <link>http://languagesforsyste.ms/post/dissertation/</link>
+      <link>https://languagesforsyste.ms/post/dissertation/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/post/dissertation/</guid>
+      <guid>https://languagesforsyste.ms/post/dissertation/</guid>
       <description>
 
 &lt;p&gt;After many years at Cornell University, I have finally completed my
 PhD journey!  My dissertation, entitled &amp;ldquo;Programming Safely with Weak
 (And Strong) Consistency&amp;rdquo;, is now available via
 &lt;a href=&#34;https://search.proquest.com/openview/1df00630d333277c5a74758c8f67c0d7/1.pdf&#34; target=&#34;_blank&#34;&gt;ProQuest&lt;/a&gt;
-(or &lt;a href=&#34;http://languagesforsyste.ms/files/thesis.pdf&#34;&gt;directly from me&lt;/a&gt;).&lt;/p&gt;
+(or &lt;a href=&#34;https://languagesforsyste.ms/files/thesis.pdf&#34;&gt;directly from me&lt;/a&gt;).&lt;/p&gt;
 
 &lt;h2 id=&#34;that-document-is-364-pages-is-there-a-summary&#34;&gt;That document is 364 pages, is there a summary?&lt;/h2&gt;
 
@@ -267,37 +267,37 @@ thank you.&lt;/p&gt;
     
     <item>
       <title>Derecho Tutorial</title>
-      <link>http://languagesforsyste.ms/talk/derecho-tutorial/</link>
+      <link>https://languagesforsyste.ms/talk/derecho-tutorial/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/derecho-tutorial/</guid>
+      <guid>https://languagesforsyste.ms/talk/derecho-tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Derecho&#39;s Intelligent Object Store</title>
-      <link>http://languagesforsyste.ms/talk/derecho-poster-aisys/</link>
+      <link>https://languagesforsyste.ms/talk/derecho-poster-aisys/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/derecho-poster-aisys/</guid>
+      <guid>https://languagesforsyste.ms/talk/derecho-poster-aisys/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Tour of Gallifrey, a Language for Geodistributed Programming</title>
-      <link>http://languagesforsyste.ms/publication/gallifrey/</link>
+      <link>https://languagesforsyste.ms/publication/gallifrey/</link>
       <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/publication/gallifrey/</guid>
+      <guid>https://languagesforsyste.ms/publication/gallifrey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gallifrey SNAPL Talk</title>
-      <link>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</link>
+      <link>https://languagesforsyste.ms/talk/gallifrey-conference-talk/</link>
       <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
       
-      <guid>http://languagesforsyste.ms/talk/gallifrey-conference-talk/</guid>
+      <guid>https://languagesforsyste.ms/talk/gallifrey-conference-talk/</guid>
       <description></description>
     </item>
     

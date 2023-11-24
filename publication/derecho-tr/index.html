@@ -18,7 +18,7 @@
   <meta name="description" content="The coming generation of Internet-of-Things (IoT) applications will process massive amounts of incoming data while supporting data mining and online learning. In cases with demanding real-time requirements, such systems behave as smart memories: high-bandwidth services that capture sensor input, proceses it using machine-learning tools, replicate and store “interesting” data (discarding uninteresting content), update knowledge models, and trigger urgently-needed responses. Derecho is a high-throughput librry for building smart memories and similar services. At its core Derecho implements atomic multicast and state machine replication. Derecho’s replicated&lt;T&gt; template defines a replicated type; the corresponding objects are associated with subgroups, which can be sharded into keyvalue structures. The persistent&lt;T&gt; and volatile&lt;T&gt; storage templates implement version vectors with optional NVM persistence. These support time-indexed access, offering lock-free snapshot isolation that blends temporal precision and causal consistency. Derecho automates application management, supporting multigroup structures and providing consistent knowledge of the current membership mapping. A query can access data from many shards or subgroups, and consistency is guaranteed without any form of distributed locking. Whereas many systems run consensus on the critical path, Derecho requires consensus only when updating membership. By leveraging an RDMA data plane and NVM storage, and adopting a novel receiver-side batching technique, Derecho can saturate a 12.5GB RDMA network, sending millions of events per second in each subgroup or shard. In a single subgroup with 2-16 members, throughput peaks at 16 GB/s for large (100MB or more) objects. When using version-vector storage, Derecho is limited by the speed of the SSD or RamDisk, showing no loss of performance as group sizes grow. While key-value subgroups would typically use 2 or 3-member shards, unsharded subgroups could be large. In tests with a 128-member group, Derecho’s multicast and Paxos protocols were just 2-3x slower than for a small group, depending on the traffic pattern. With network contention, slow members, or overlapping groups that generate concurrent traffic, Derecho’s protocols remain stable and adapt to the available bandwidth.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://languagesforsyste.ms/publication/derecho-tr/">
+  <link rel="alternate" hreflang="en-us" href="https://languagesforsyste.ms/publication/derecho-tr/">
 
   
 
@@ -94,15 +94,15 @@
   
 
   
-  <link rel="alternate" href="http://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
-  <link rel="feed" href="http://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
+  <link rel="alternate" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
+  <link rel="feed" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="http://languagesforsyste.ms/publication/derecho-tr/">
+  <link rel="canonical" href="https://languagesforsyste.ms/publication/derecho-tr/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -110,13 +110,13 @@
   <meta property="twitter:creator" content="@mbpmilano">
   
   <meta property="og:site_name" content="Mae Milano">
-  <meta property="og:url" content="http://languagesforsyste.ms/publication/derecho-tr/">
+  <meta property="og:url" content="https://languagesforsyste.ms/publication/derecho-tr/">
   <meta property="og:title" content="Building Smart Memories and Cloud Services with Derecho | Mae Milano">
   <meta property="og:description" content="The coming generation of Internet-of-Things (IoT) applications will process massive amounts of incoming data while supporting data mining and online learning. In cases with demanding real-time requirements, such systems behave as smart memories: high-bandwidth services that capture sensor input, proceses it using machine-learning tools, replicate and store “interesting” data (discarding uninteresting content), update knowledge models, and trigger urgently-needed responses. Derecho is a high-throughput librry for building smart memories and similar services. At its core Derecho implements atomic multicast and state machine replication. Derecho’s replicated&lt;T&gt; template defines a replicated type; the corresponding objects are associated with subgroups, which can be sharded into keyvalue structures. The persistent&lt;T&gt; and volatile&lt;T&gt; storage templates implement version vectors with optional NVM persistence. These support time-indexed access, offering lock-free snapshot isolation that blends temporal precision and causal consistency. Derecho automates application management, supporting multigroup structures and providing consistent knowledge of the current membership mapping. A query can access data from many shards or subgroups, and consistency is guaranteed without any form of distributed locking. Whereas many systems run consensus on the critical path, Derecho requires consensus only when updating membership. By leveraging an RDMA data plane and NVM storage, and adopting a novel receiver-side batching technique, Derecho can saturate a 12.5GB RDMA network, sending millions of events per second in each subgroup or shard. In a single subgroup with 2-16 members, throughput peaks at 16 GB/s for large (100MB or more) objects. When using version-vector storage, Derecho is limited by the speed of the SSD or RamDisk, showing no loss of performance as group sizes grow. While key-value subgroups would typically use 2 or 3-member shards, unsharded subgroups could be large. In tests with a 128-member group, Derecho’s multicast and Paxos protocols were just 2-3x slower than for a small group, depending on the traffic pattern. With network contention, slow members, or overlapping groups that generate concurrent traffic, Derecho’s protocols remain stable and adapt to the available bandwidth.">
   
   
     
-  <meta property="og:image" content="http://languagesforsyste.ms/img/icon-192.png">
+  <meta property="og:image" content="https://languagesforsyste.ms/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2017-11-01T00:00:00-07:00">
@@ -480,28 +480,28 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Building%20Smart%20Memories%20and%20Cloud%20Services%20with%20Derecho&amp;url=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f"
+         href="https://twitter.com/intent/tweet?text=Building%20Smart%20Memories%20and%20Cloud%20Services%20with%20Derecho&amp;url=https%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f&amp;title=Building%20Smart%20Memories%20and%20Cloud%20Services%20with%20Derecho"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f&amp;title=Building%20Smart%20Memories%20and%20Cloud%20Services%20with%20Derecho"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f&amp;title=Building%20Smart%20Memories%20and%20Cloud%20Services%20with%20Derecho"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f&amp;title=Building%20Smart%20Memories%20and%20Cloud%20Services%20with%20Derecho"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
@@ -670,13 +670,13 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="http://languagesforsyste.ms/publication/mixt/" rel="next">MixT: A Language for Mixing Consistency in Geodistributed Transactions</a>
+    <a href="https://languagesforsyste.ms/publication/mixt/" rel="next">MixT: A Language for Mixing Consistency in Geodistributed Transactions</a>
   </div>
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="http://languagesforsyste.ms/publication/mm-16-tr/" rel="prev">Mixing Consistency in Geodistributed Transactions: Technical Report (old)</a>
+    <a href="https://languagesforsyste.ms/publication/mm-16-tr/" rel="prev">Mixing Consistency in Geodistributed Transactions: Technical Report (old)</a>
   </div>
   
 </div>
