@@ -13,6 +13,33 @@
     
     
     <item>
+      <title>Monotonicity and Opportunistically-Batched Actions in Derecho</title>
+      <link>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Initial Steps Toward a Compiler for Distributed Programs</title>
+      <link>https://languagesforsyste.ms/publication/initial-steps-distributed-compiler/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/initial-steps-distributed-compiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Better Defunctionalization through Lambda Set Specialization</title>
+      <link>https://languagesforsyste.ms/publication/lss/</link>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/lss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Keep CALM and CRDT On</title>
       <link>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 -0800</pubDate>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jun 2023 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://languagesforsyste.ms/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Better Defunctionalization through Lambda Set Specialization</title>
+      <link>https://languagesforsyste.ms/publication/lss/</link>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 -0700</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/lss/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Keep CALM and CRDT On</title>
@@ -40,20 +49,20 @@
     </item>
     
     <item>
-      <title>New Directions in Cloud Programming</title>
-      <link>https://languagesforsyste.ms/publication/pact/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 -0800</pubDate>
-      
-      <guid>https://languagesforsyste.ms/publication/pact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>A Tour of Gallifrey, a Language for Geodistributed Programming</title>
       <link>https://languagesforsyste.ms/publication/gallifrey/</link>
       <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/gallifrey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Derecho: Fast State Machine Replication for Cloud Services</title>
+      <link>https://languagesforsyste.ms/publication/derecho/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/derecho/</guid>
       <description></description>
     </item>
     

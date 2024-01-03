@@ -12,6 +12,30 @@
     
     <url>
     
+      <loc>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</loc>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication/initial-steps-distributed-compiler/</loc>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication/lss/</loc>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</loc>
       <lastmod>2023-01-07T20:49:13-05:00</lastmod>
     </url>
@@ -68,6 +92,14 @@
     
     <url>
     
+      <loc>https://languagesforsyste.ms/project/morphic/</loc>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://languagesforsyste.ms/publication/fearless-concurrency/</loc>
       <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
@@ -77,7 +109,7 @@
     <url>
     
       <loc>https://languagesforsyste.ms/publication/pact/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
     </url>
     
   
@@ -133,7 +165,7 @@
     <url>
     
       <loc>https://languagesforsyste.ms/publication/derecho/</loc>
-      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
     </url>
     
   
@@ -253,7 +285,7 @@
     <url>
     
       <loc>https://languagesforsyste.ms/publication_types/1/</loc>
-      <lastmod>2023-01-07T20:49:13-05:00</lastmod>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -261,8 +293,8 @@
     
     <url>
     
-      <loc>https://languagesforsyste.ms/publication_types/2/</loc>
-      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
+      <loc>https://languagesforsyste.ms/publication_types/3/</loc>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -360,7 +392,7 @@
     <url>
     
       <loc>https://languagesforsyste.ms/publication_types/</loc>
-      <lastmod>2023-01-07T20:49:13-05:00</lastmod>
+      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
       <priority>0</priority>
     </url>
     

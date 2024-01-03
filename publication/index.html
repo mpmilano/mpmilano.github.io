@@ -228,25 +228,6 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#publications_selected">
-            
-            <span>Publications</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link" href="/#awards">
             
             <span>Awards</span>
@@ -287,7 +268,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/#publications">
             
-            <span>Reports</span>
+            <span>Publications</span>
             
           </a>
         </li>
@@ -459,6 +440,15 @@
         
         
       
+        
+        
+      
+        
+        
+      
+        
+        
+      
 
       <div class="form-row mb-3">
         <div class="col-auto">
@@ -469,11 +459,11 @@
             <option value="*">All</option>
             
             <option value=".pubtype-1">
-              Conference paper
+              Journal article (or equivalent)
             </option>
             
-            <option value=".pubtype-2">
-              Journal article
+            <option value=".pubtype-3">
+              Invited Paper
             </option>
             
             <option value=".pubtype-4">
@@ -530,6 +520,291 @@
       </div>
 
       <div id="container-publications">
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2023">
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/monotonicity-in-derecho/" itemprop="url">Monotonicity and Opportunistically-Batched Actions in Derecho</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Our work centers on a programming style in which a system separates data movement from control-data exchange, streaming the former over hardware-implemented reliable channels, while using a new form of distributed shared memory to manage the latter. Protocol decisions and control actions are expressed as monotonic predicates over the control data guarding protocol actions. Provable invariants about the protocol are expressed as effectively-common knowledge, which can be derived from the monotonic predicates in effect during a particular membership epoch. The methodology enables a natural style of code that is easy to reason about, and it runs efficiently on modern hardware. We used this approach to create Derecho, an optimal Paxos-based data replication library that sets performance records, and we believe it is broadly applicable to the construction of reliable distributed systems on high-bandwidth networks.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Ken Birman, Sagar Jha, Mae Milano, Lorenzo Rosa, Weijia Song, Edward Tremel
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>International Symposium on Stabilizing, Safety, and Security of Distributed Systems</em>,
+    
+    2023
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://link.springer.com/content/pdf/10.1007/978-3-031-44274-2.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/languages-for-distribution/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/derecho/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1007/978-3-031-44274-2_14" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2023">
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/initial-steps-distributed-compiler/" itemprop="url">Initial Steps Toward a Compiler for Distributed Programs</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    In the Hydro project we are designing a compiler toolkit that can optimize for the concerns of distributed systems, including scale-up and scale-down, availability, and consistency of outcomes across replicas. This invited paper overviews the project, and provides an early walk-through of the kind of optimization that is possible. We illustrate how type transformations as well as local program transformations can combine, step by step, to convert a single-node program into a variety of distributed design points that offer the same semantics with different performance and deployment characteristics.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Joseph M. Hellerstein, Shadaj Laddad, Mae Milano, Conor Power, Mingwei Samuel
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    Proceedings of the 5th workshop on Advanced tools, programming languages, and PLatforms for Implementing and Evaluating algorithms for Distributed systems*,
+    
+    2023
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/doi/pdf/10.1145/3584684.3597272" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/languages-for-distribution/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/hydro/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3584684.3597272" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/lss/" itemprop="url">Better Defunctionalization through Lambda Set Specialization</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Higher-order functions pose a challenge for both static program analyses and optimizing compilers. To simplify the analysis and compilation of languages with higher-order functions, a rich body of prior work has proposed a variety of defunctionalization techniques, which can eliminate higher-order functions from a program by transforming the program to a semantically-equivalent first-order representation. Several modern languages take this a step further, specializing higher-order functions with respect to the functions on which they operate, and in turn allowing compilers to generate more efficient code. However, existing specializing defunctionalization techniques restrict how function values may be used, forcing implementations to fall back on costly dynamic alternatives. We propose lambda set specialization (LSS), the first specializing defunctionalization technique which imposes no restrictions on how function values may be used. We formulate LSS in terms of a polymorphic type system which tracks the flow of function values through the program, and use this type system to recast specialization of higher-order functions with respect to their arguments as a form of type monomorphization. We show that our type system admits a simple and tractable type inference algorithm, and give a formalization and fully-mechanized proof in the Isabelle/HOL proof assistant showing soundness and completeness of the type inference algorithm with respect to the type system. To show the benefits of LSS, we evaluate its impact on the run time performance of code generated by the MLton compiler for Standard ML, the OCaml compiler, and the new Morphic functional programming language. We find that pre-processing with LSS achieves run time speedups of up to 6.85x under MLton, 3.45x for OCaml, and 78.93x for Morphic.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    William Brandon, Benjamin Driscoll, Frank Dai, Wilson Berkow, Mae Milano
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>Proceedings of the ACM on Programming Languages (PACMPL) Volume 7, No. PLDI</em>,
+    
+    2023
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/doi/pdf/10.1145/3591260" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/morphic/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3591260" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        </div>
+
         
 
         
@@ -844,7 +1119,7 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2021">
           
             <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
 
@@ -1039,7 +1314,7 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2019">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
           
             <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
 
