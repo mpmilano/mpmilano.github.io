@@ -22,6 +22,24 @@
     </item>
     
     <item>
+      <title>Researching with, and as, an Undergraduate Student</title>
+      <link>https://languagesforsyste.ms/talk/researching-with-undergraduates-popl/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 -0800</pubDate>
+      
+      <guid>https://languagesforsyste.ms/talk/researching-with-undergraduates-popl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A New Type System for Fearless Concurrency</title>
+      <link>https://languagesforsyste.ms/talk/fearless-mit/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://languagesforsyste.ms/talk/fearless-mit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A developer-centric approach to Fearless Concurrency</title>
       <link>https://languagesforsyste.ms/talk/fearless-apple/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
@@ -36,6 +54,15 @@
       <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
       
       <guid>https://languagesforsyste.ms/talk/fearless-pldi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming Distributed Systems</title>
+      <link>https://languagesforsyste.ms/talk/strangeloop/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://languagesforsyste.ms/talk/strangeloop/</guid>
       <description></description>
     </item>
     
