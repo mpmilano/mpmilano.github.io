@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Tue, 06 Jun 2023 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 08 Jul 2025 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://languagesforsyste.ms/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building Bridges: Safe Interactions with Foreign Languages through Omniglot</title>
+      <link>https://languagesforsyste.ms/publication/omniglot/</link>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/omniglot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flo: A Semantic Foundation for Progressive Stream Processing</title>
+      <link>https://languagesforsyste.ms/publication/flo/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/flo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Verifying a C Implementation of Derecho’s Coordination Mechanism Using VST and Coq</title>
+      <link>https://languagesforsyste.ms/publication/nasafm/</link>
+      <pubDate>Sat, 25 May 2024 00:00:00 -0400</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/nasafm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Better Defunctionalization through Lambda Set Specialization</title>

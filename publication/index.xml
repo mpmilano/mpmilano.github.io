@@ -13,6 +13,33 @@
     
     
     <item>
+      <title>Building Bridges: Safe Interactions with Foreign Languages through Omniglot</title>
+      <link>https://languagesforsyste.ms/publication/omniglot/</link>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/omniglot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flo: A Semantic Foundation for Progressive Stream Processing</title>
+      <link>https://languagesforsyste.ms/publication/flo/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/flo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Verifying a C Implementation of Derecho’s Coordination Mechanism Using VST and Coq</title>
+      <link>https://languagesforsyste.ms/publication/nasafm/</link>
+      <pubDate>Sat, 25 May 2024 00:00:00 -0400</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/nasafm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Monotonicity and Opportunistically-Batched Actions in Derecho</title>
       <link>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</link>
       <pubDate>Sat, 30 Sep 2023 00:00:00 -0400</pubDate>

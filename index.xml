@@ -11,6 +11,33 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Building Bridges: Safe Interactions with Foreign Languages through Omniglot</title>
+      <link>https://languagesforsyste.ms/publication/omniglot/</link>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/omniglot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flo: A Semantic Foundation for Progressive Stream Processing</title>
+      <link>https://languagesforsyste.ms/publication/flo/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/flo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Verifying a C Implementation of Derecho’s Coordination Mechanism Using VST and Coq</title>
+      <link>https://languagesforsyste.ms/publication/nasafm/</link>
+      <pubDate>Sat, 25 May 2024 00:00:00 -0400</pubDate>
+      
+      <guid>https://languagesforsyste.ms/publication/nasafm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Looking for new PhD students!</title>
       <link>https://languagesforsyste.ms/post/looking-for-students/</link>
       <pubDate>Fri, 20 Oct 2023 00:00:00 -0400</pubDate>
@@ -198,36 +225,6 @@ application, even if we&amp;rsquo;ve missed your email!&lt;/p&gt;
       
       <guid>https://languagesforsyste.ms/talk/strangeloop/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Bringing Fearless Concurrency to the Masses</title>
-      <link>https://languagesforsyste.ms/project/fearless-concurrency/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://languagesforsyste.ms/project/fearless-concurrency/</guid>
-      <description>&lt;p&gt;More details can be found in the &lt;a href=&#34;../../publication/fearless-concurrency/&#34;&gt;PLDI paper&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hydro: Software that Runs at Every Scale</title>
-      <link>https://languagesforsyste.ms/project/hydro/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://languagesforsyste.ms/project/hydro/</guid>
-      <description>&lt;p&gt;Please visit the &lt;a href=&#34;https://hydro.run&#34; target=&#34;_blank&#34;&gt;main Hydro website&lt;/a&gt; to learn more!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Morphic: Pure Functional Code at the Speed of C</title>
-      <link>https://languagesforsyste.ms/project/morphic/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://languagesforsyste.ms/project/morphic/</guid>
-      <description>&lt;p&gt;Please visit the &lt;a href=&#34;https://morphic-lang.org&#34; target=&#34;_blank&#34;&gt;main Morphic website&lt;/a&gt; to learn more!&lt;/p&gt;
-</description>
     </item>
     
   </channel>
