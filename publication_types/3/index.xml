@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sat, 30 Sep 2023 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 Sep 2023 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://languagesforsyste.ms/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Monotonicity and Opportunistically-Batched Actions in Derecho</title>
       <link>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</link>
-      <pubDate>Sat, 30 Sep 2023 00:00:00 -0700</pubDate>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Initial Steps Toward a Compiler for Distributed Programs</title>
       <link>https://languagesforsyste.ms/publication/initial-steps-distributed-compiler/</link>
-      <pubDate>Tue, 20 Jun 2023 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/initial-steps-distributed-compiler/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>New Directions in Cloud Programming</title>
       <link>https://languagesforsyste.ms/publication/pact/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 -0500</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/pact/</guid>
       <description></description>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://languagesforsyste.ms/publication/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Monotonicity and Opportunistically-Batched Actions in Derecho</title>
       <link>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</link>
-      <pubDate>Sat, 30 Sep 2023 00:00:00 -0700</pubDate>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/monotonicity-in-derecho/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Initial Steps Toward a Compiler for Distributed Programs</title>
       <link>https://languagesforsyste.ms/publication/initial-steps-distributed-compiler/</link>
-      <pubDate>Tue, 20 Jun 2023 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/initial-steps-distributed-compiler/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Better Defunctionalization through Lambda Set Specialization</title>
       <link>https://languagesforsyste.ms/publication/lss/</link>
-      <pubDate>Tue, 06 Jun 2023 00:00:00 -0700</pubDate>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/lss/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>Keep CALM and CRDT On</title>
       <link>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</link>
-      <pubDate>Thu, 05 Jan 2023 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 -0500</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>Katara: Synthesizing CRDTs with Verified Lifting</title>
       <link>https://languagesforsyste.ms/publication/katara/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 -0700</pubDate>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/katara/</guid>
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>A flexible type system for fearless concurrency</title>
       <link>https://languagesforsyste.ms/publication/fearless-concurrency/</link>
-      <pubDate>Thu, 09 Jun 2022 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/fearless-concurrency/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>New Directions in Cloud Programming</title>
       <link>https://languagesforsyste.ms/publication/pact/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 -0500</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/pact/</guid>
       <description></description>
@@ -78,7 +78,7 @@
     <item>
       <title>A Tour of Gallifrey, a Language for Geodistributed Programming</title>
       <link>https://languagesforsyste.ms/publication/gallifrey/</link>
-      <pubDate>Thu, 16 May 2019 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 16 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/gallifrey/</guid>
       <description></description>
@@ -87,7 +87,7 @@
     <item>
       <title>Derecho: Fast State Machine Replication for Cloud Services</title>
       <link>https://languagesforsyste.ms/publication/derecho/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/derecho/</guid>
       <description></description>
@@ -96,7 +96,7 @@
     <item>
       <title>A Language for Mixing Consistency in Geodistributed Transactions: Technical Report</title>
       <link>https://languagesforsyste.ms/publication/mixt-tr/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/mixt-tr/</guid>
       <description></description>
@@ -105,7 +105,7 @@
     <item>
       <title>MixT: A Language for Mixing Consistency in Geodistributed Transactions</title>
       <link>https://languagesforsyste.ms/publication/mixt/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0700</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/mixt/</guid>
       <description></description>
@@ -114,7 +114,7 @@
     <item>
       <title>Building Smart Memories and Cloud Services with Derecho</title>
       <link>https://languagesforsyste.ms/publication/derecho-tr/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/derecho-tr/</guid>
       <description></description>
@@ -123,7 +123,7 @@
     <item>
       <title>Mixing Consistency in Geodistributed Transactions: Technical Report (old)</title>
       <link>https://languagesforsyste.ms/publication/mm-16-tr/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 -0700</pubDate>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/mm-16-tr/</guid>
       <description></description>
@@ -132,7 +132,7 @@
     <item>
       <title>A Coalgebraic Decision Procedure for NetKAT</title>
       <link>https://languagesforsyste.ms/publication/netkat/</link>
-      <pubDate>Wed, 01 Jul 2015 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/netkat/</guid>
       <description></description>
@@ -141,7 +141,7 @@
     <item>
       <title>Python: The Full Monty</title>
       <link>https://languagesforsyste.ms/publication/python/</link>
-      <pubDate>Tue, 01 Jan 2013 00:00:00 -0800</pubDate>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 -0500</pubDate>
       
       <guid>https://languagesforsyste.ms/publication/python/</guid>
       <description></description>

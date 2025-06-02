@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://languagesforsyste.ms/tags/consistency/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>My Dissertation is Now Available!</title>
       <link>https://languagesforsyste.ms/post/dissertation/</link>
-      <pubDate>Sat, 31 Oct 2020 00:00:00 -0700</pubDate>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/post/dissertation/</guid>
       <description>After many years at Cornell University, I have finally completed my PhD journey! My dissertation, entitled &amp;ldquo;Programming Safely with Weak (And Strong) Consistency&amp;rdquo;, is now available via ProQuest (or directly from me).
@@ -25,7 +25,7 @@ That document is 364 pages, is there a summary? Sure! The unifying theme of my d
     <item>
       <title>Mixing Consistency with MixT: Technical Report Available!</title>
       <link>https://languagesforsyste.ms/post/mixt-tr/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/post/mixt-tr/</guid>
       <description>It&amp;rsquo;s been a long wait. It was our great pleasure to present the MixT paper at this year&amp;rsquo;s PLDI, but we always felt that the conference version was missing a few details and extra explanations which (we sincerely hope) would go a long way towards explaining the MixT approach to distributed transactions. So it makes us overjoyed to finally make the extended Technical Report of the MixT paper available to the public.</description>

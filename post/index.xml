@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://languagesforsyste.ms/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Looking for new PhD students!</title>
       <link>https://languagesforsyste.ms/post/looking-for-students/</link>
-      <pubDate>Fri, 20 Oct 2023 00:00:00 -0700</pubDate>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/post/looking-for-students/</guid>
       <description>I&amp;rsquo;m actively looking for new PhD students! Hey! If you&amp;rsquo;ve found this page, you&amp;rsquo;re (hopefully) looking at me as a potential advisor for a PhD in computer science. Welcome! I&amp;rsquo;m starting at Princeton for next semester (officially January 17th 2024), which makes fall 2023 the perfect time to apply to the PhD program!
@@ -25,7 +25,7 @@ What might we work on together? My research focuses on designing new Programming
     <item>
       <title>My Dissertation is Now Available!</title>
       <link>https://languagesforsyste.ms/post/dissertation/</link>
-      <pubDate>Sat, 31 Oct 2020 00:00:00 -0700</pubDate>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/post/dissertation/</guid>
       <description>After many years at Cornell University, I have finally completed my PhD journey! My dissertation, entitled &amp;ldquo;Programming Safely with Weak (And Strong) Consistency&amp;rdquo;, is now available via ProQuest (or directly from me).
@@ -35,7 +35,7 @@ That document is 364 pages, is there a summary? Sure! The unifying theme of my d
     <item>
       <title>Mixing Consistency with MixT: Technical Report Available!</title>
       <link>https://languagesforsyste.ms/post/mixt-tr/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/post/mixt-tr/</guid>
       <description>It&amp;rsquo;s been a long wait. It was our great pleasure to present the MixT paper at this year&amp;rsquo;s PLDI, but we always felt that the conference version was missing a few details and extra explanations which (we sincerely hope) would go a long way towards explaining the MixT approach to distributed transactions. So it makes us overjoyed to finally make the extended Technical Report of the MixT paper available to the public.</description>

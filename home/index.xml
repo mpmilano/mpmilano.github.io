@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://languagesforsyste.ms/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>https://languagesforsyste.ms/home/hero_carousel/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/hero_carousel/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Academic</title>
       <link>https://languagesforsyste.ms/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/hero/</guid>
       <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
@@ -33,17 +33,17 @@
     <item>
       <title></title>
       <link>https://languagesforsyste.ms/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/about/</guid>
-      <description>Hi! I&amp;rsquo;m Mae! I&amp;rsquo;m an incoming professor at Princeton University starting January 17th, and you&amp;rsquo;ve found my mostly-research website! My research focuses on designing new Programming Languages to solve problems in Distributed Systems. I also have active, exciting projects purely in PL or DS.
-I&amp;rsquo;m actively looking for new PhD students to explore these areas!</description>
+      <description>Hi! I&amp;rsquo;m Mae! I&amp;rsquo;m an assistant professor at Princeton University, and you&amp;rsquo;ve found my mostly-research website! My research focuses on designing new Programming Languages to solve problems in Distributed Systems. I also have active, exciting projects purely in PL or DS.
+My students and I are part of both the Princeton (non-ML) Systems group and Programming Languages group.</description>
     </item>
     
     <item>
       <title>Skills</title>
       <link>https://languagesforsyste.ms/home/skills/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/skills/</guid>
       <description></description>
@@ -61,7 +61,7 @@ I&amp;rsquo;m actively looking for new PhD students to explore these areas!</des
     <item>
       <title>Publications</title>
       <link>https://languagesforsyste.ms/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/publications/</guid>
       <description> Please use the link above for a full list, which can be filtered to show only peer-reviewed articles appearing in journals or at major conferences.
@@ -71,7 +71,7 @@ Recent journal articles </description>
     <item>
       <title>Selected Publications</title>
       <link>https://languagesforsyste.ms/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/publications_selected/</guid>
       <description>Additional publications can be found below</description>
@@ -80,7 +80,7 @@ Recent journal articles </description>
     <item>
       <title>Awards</title>
       <link>https://languagesforsyste.ms/home/awards/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/awards/</guid>
       <description> NDSEG Fellowship (2015) NSF GRFP Honorable Mention (2015) Cornell CS Department Service Award (multiple, latest 2020) Senior Prize in Computer Science (2013) Rose Rosengard Subotnik Prize (2012)  </description>
@@ -89,7 +89,7 @@ Recent journal articles </description>
     <item>
       <title>Projects</title>
       <link>https://languagesforsyste.ms/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/projects/</guid>
       <description></description>
@@ -98,7 +98,7 @@ Recent journal articles </description>
     <item>
       <title>Selected Talks</title>
       <link>https://languagesforsyste.ms/home/talks_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/talks_selected/</guid>
       <description></description>
@@ -107,7 +107,7 @@ Recent journal articles </description>
     <item>
       <title>Recent Talks</title>
       <link>https://languagesforsyste.ms/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/talks/</guid>
       <description></description>
@@ -116,7 +116,7 @@ Recent journal articles </description>
     <item>
       <title>Recent Posts</title>
       <link>https://languagesforsyste.ms/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/posts/</guid>
       <description></description>
@@ -125,7 +125,7 @@ Recent journal articles </description>
     <item>
       <title>Teaching</title>
       <link>https://languagesforsyste.ms/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/teaching/</guid>
       <description>CS 294-170: Graduate Seminar: Programming the Cloud The public clouds are the most powerful general-purpose computers ever assembled, allowing individuals to rent their power at unlimited scale, on demand. This makes &amp;ldquo;the cloud&amp;rdquo; the biggest game-changer in computing access since the adoption of the PDP-11 minicomputer in the early 1970s. However, unlike the advent of UNIX and C for PDP-11, an organic programming model has yet to emerge for the cloud.</description>
@@ -134,7 +134,7 @@ Recent journal articles </description>
     <item>
       <title>Service</title>
       <link>https://languagesforsyste.ms/home/service/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/service/</guid>
       <description>Professional Service  Artifact Evaluation Committee: OOPSLA &amp;lsquo;15, POPL &amp;lsquo;17, PLDI &amp;lsquo;19, OOPSLA &amp;lsquo;23
@@ -147,7 +147,7 @@ Recent journal articles </description>
     <item>
       <title>Tags</title>
       <link>https://languagesforsyste.ms/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/tags/</guid>
       <description></description>
@@ -156,7 +156,7 @@ Recent journal articles </description>
     <item>
       <title>Contact</title>
       <link>https://languagesforsyste.ms/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://languagesforsyste.ms/home/contact/</guid>
       <description></description>
