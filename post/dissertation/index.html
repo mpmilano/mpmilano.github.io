@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.163.3">
   <meta name="author" content="Mae Milano">
 
   
@@ -15,7 +15,9 @@
   
     
   
-  <meta name="description" content="My dissertation is now available [here](/files/thesis.pdf)">
+  
+  
+  <meta name="description" content="My dissertation is now available here">
 
   
   <link rel="alternate" hreflang="en-us" href="https://languagesforsyste.ms/post/dissertation/">
@@ -77,22 +79,10 @@
 
   
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-130045632-2', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
   
 
+  
+  
   
   <link rel="alternate" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
   <link rel="feed" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
@@ -112,7 +102,7 @@
   <meta property="og:site_name" content="Mae Milano">
   <meta property="og:url" content="https://languagesforsyste.ms/post/dissertation/">
   <meta property="og:title" content="My Dissertation is Now Available! | Mae Milano">
-  <meta property="og:description" content="My dissertation is now available [here](/files/thesis.pdf)">
+  <meta property="og:description" content="My dissertation is now available here">
   
   
     
@@ -435,13 +425,9 @@
     </li>
     <li>
       <a class="email"
-	  href="#"
-	  data-contact="bGUtZW1haWxAdGhlLWRvbWFpbi5jb20="
-      data-subj="QW4gQW1hemluZyBTdWJqZWN0"
-      onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">
+         href="mailto:?subject=My%20Dissertation%20is%20Now%20Available%21&amp;body=https%3a%2f%2flanguagesforsyste.ms%2fpost%2fdissertation%2f">
         <i class="fas fa-envelope"></i>
       </a>
-	  
     </li>
   </ul>
 </div>
@@ -535,16 +521,12 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<p>After many years at Cornell University, I have finally completed my
+      <p>After many years at Cornell University, I have finally completed my
 PhD journey!  My dissertation, entitled &ldquo;Programming Safely with Weak
 (And Strong) Consistency&rdquo;, is now available via
-<a href="https://search.proquest.com/openview/1df00630d333277c5a74758c8f67c0d7/1.pdf" target="_blank">ProQuest</a>
+<a href="https://search.proquest.com/openview/1df00630d333277c5a74758c8f67c0d7/1.pdf" target="_blank" rel="noopener">ProQuest</a>
 (or <a href="/files/thesis.pdf">directly from me</a>).</p>
-
 <h2 id="that-document-is-364-pages-is-there-a-summary">That document is 364 pages, is there a summary?</h2>
-
 <p>Sure! The unifying theme of my dissertation is that
 writing programs against weak consistency is inherently difficult.
 My dissertation makes the job of writing safe programs against weak
@@ -552,14 +534,12 @@ consistency easier, by introducing programming languages in which
 strong guarantees are defended from weakly-consistent influence, and
 in which programmers can write consistent-by-construction programs
 atop underlying weakly-consistent replication.</p>
-
 <p>The first of these languages is MixT, a new language for writing
 <em>mixed-consistency transactions</em>.  These atomic transactions can
 operate against data at multiple consistency levels simultaneously,
 and are equipped with an information-flow type system which guarantees
 weakly-consistent observations cannot influence strongly-consistent
 actions.</p>
-
 <p>While mixed-consistency transactions can defend strong data from weak
 observations, they cannot ensure that fully-weak code is itself
 correct.  To address this, we leverage monotonic data types to
@@ -570,7 +550,6 @@ monotonic, boolean-returning functions are stable predicates: once
 they have become true, they remain true for all time.  Actions which
 are predicated on these stable predicates cannot be invalidated by
 missed or future updates.</p>
-
 <p>This monotonic language sits at the core of Derecho, a new system for
 building strongly-consistent distributed systems via replicated state
 machines.  Derecho&rsquo;s Shared State Table (SST) implements monotonic
@@ -579,7 +558,6 @@ high-performance, asynchronous substrate on which to build Derecho&rsquo;s
 monotonic language.  Using this SST, we have rephrased the Paxos
 delivery condition monotonically, granting strong consistency despite
 the underlying asynchronous replication.</p>
-
 <p>Finally Gallifrey exposes the monotonic reasoning properties of
 Derecho&rsquo;s core language directly to the user, safely integrating
 monotonic datatypes into a traditional Java-like programming language.
@@ -590,9 +568,7 @@ restrictions can be viewed monotonically, using a language of
 predicates and triggers similar to that at the core of Derecho.  A
 novel <em>linear region</em>-based type system enforces that shared object
 restrictions are respected.</p>
-
 <h2 id="a-phd-takes-a-village">A PhD Takes a Village</h2>
-
 <p>And mine is no exception.  The kindness and generosity of the people
 who have surrounded me during my PhD never ceases to amaze.  Without
 the community surrounding me, attaining a PhD would be nearly
@@ -602,10 +578,8 @@ assistance I have received from Andrew Myers, Ken Birman, Fabian
 Muehlboeck, Patrick LaFontaine and Danny Yang.  It is no exaggeration
 to say that without their help and guiding presence, I could never
 have completed this PhD.</p>
-
 <p>To everyone who has helped me on this journey: thank you. Sincerely,
 thank you.</p>
-
 <p>~Mae</p>
 
     </div>
@@ -638,7 +612,7 @@ thank you.</p>
 
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
-  <img class="portrait mr-3" src="/img/winterface-small.png" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/img/princeton-portrait.jpg" itemprop="image" alt="Avatar">
   
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/">Mae Milano</a></h5>
@@ -739,11 +713,11 @@ thank you.</p>
       <h3>Related</h3>
       <ul>
         
+        <li><a href="/project/gallifrey/">Gallifrey: a New Language for Distributed Programming</a></li>
+        
         <li><a href="/post/mixt-tr/">Mixing Consistency with MixT: Technical Report Available!</a></li>
         
         <li><a href="/project/languages-for-distribution/">Programming Replicated, Distributed Systems</a></li>
-        
-        <li><a href="/project/gallifrey/">Gallifrey: a New Language for Distributed Programming</a></li>
         
         <li><a href="/project/derecho/">Derecho: Programming the Datacenter</a></li>
         
@@ -774,8 +748,8 @@ thank you.</p>
     
 <section id="comments">
   <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+<script>
+    window.disqus_config = function () {
     
     
     
@@ -791,8 +765,9 @@ thank you.</p>
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
 </section>
 
 
@@ -805,7 +780,7 @@ thank you.</p>
   
 
   <p class="powered-by">
-    &copy; 2020 &middot; 
+    © 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -921,7 +896,7 @@ thank you.</p>
     
     
     
-    <script src="/js/academic.min.14cafafda844d960749b7551524d1c3a.js"></script>
+    <script src="/js/academic.min.4a2962d241ac8fe8db799a8e808e7e48.js"></script>
 
     
 

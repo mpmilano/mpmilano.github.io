@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mae Milano</title>
@@ -7,34 +6,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Dec 2022 00:00:00 -0500</lastBuildDate>
+    <atom:link href="https://languagesforsyste.ms/tags/index.xml" rel="self" type="application/rss+xml" />
     
-	<atom:link href="https://languagesforsyste.ms/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Concurrency</title>
-      <link>https://languagesforsyste.ms/tags/concurrency/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://languagesforsyste.ms/tags/concurrency/</guid>
+      <title>Teaching</title>
+      <link>https://languagesforsyste.ms/tags/teaching/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 -0500</pubDate>
+      <guid>https://languagesforsyste.ms/tags/teaching/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Consistency</title>
-      <link>https://languagesforsyste.ms/tags/consistency/</link>
-      <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://languagesforsyste.ms/tags/consistency/</guid>
+      <title>Concurrency</title>
+      <link>https://languagesforsyste.ms/tags/concurrency/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
+      <guid>https://languagesforsyste.ms/tags/concurrency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Distributed Systems</title>
       <link>https://languagesforsyste.ms/tags/distributed-systems/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
       <guid>https://languagesforsyste.ms/tags/distributed-systems/</guid>
       <description></description>
     </item>
@@ -42,8 +38,7 @@
     <item>
       <title>Linear Types</title>
       <link>https://languagesforsyste.ms/tags/linear-types/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
       <guid>https://languagesforsyste.ms/tags/linear-types/</guid>
       <description></description>
     </item>
@@ -51,8 +46,7 @@
     <item>
       <title>Ownership</title>
       <link>https://languagesforsyste.ms/tags/ownership/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
       <guid>https://languagesforsyste.ms/tags/ownership/</guid>
       <description></description>
     </item>
@@ -60,9 +54,16 @@
     <item>
       <title>Programming Languages</title>
       <link>https://languagesforsyste.ms/tags/programming-languages/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
       <guid>https://languagesforsyste.ms/tags/programming-languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consistency</title>
+      <link>https://languagesforsyste.ms/tags/consistency/</link>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
+      <guid>https://languagesforsyste.ms/tags/consistency/</guid>
       <description></description>
     </item>
     
@@ -70,17 +71,7 @@
       <title>Transactions</title>
       <link>https://languagesforsyste.ms/tags/transactions/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/tags/transactions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>teaching</title>
-      <link>https://languagesforsyste.ms/tags/teaching/</link>
-      <pubDate>Tue, 20 Dec 2022 00:00:00 -0500</pubDate>
-      
-      <guid>https://languagesforsyste.ms/tags/teaching/</guid>
       <description></description>
     </item>
     

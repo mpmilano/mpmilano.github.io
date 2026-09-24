@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Transactions on Mae Milano</title>
@@ -8,54 +7,233 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
     <lastBuildDate>Sat, 31 Oct 2020 00:00:00 -0400</lastBuildDate>
+    <atom:link href="https://languagesforsyste.ms/tags/transactions/index.xml" rel="self" type="application/rss+xml" />
     
-	<atom:link href="https://languagesforsyste.ms/tags/transactions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My Dissertation is Now Available!</title>
       <link>https://languagesforsyste.ms/post/dissertation/</link>
       <pubDate>Sat, 31 Oct 2020 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/post/dissertation/</guid>
-      <description>After many years at Cornell University, I have finally completed my PhD journey! My dissertation, entitled &amp;ldquo;Programming Safely with Weak (And Strong) Consistency&amp;rdquo;, is now available via ProQuest (or directly from me).
-That document is 364 pages, is there a summary? Sure! The unifying theme of my dissertation is that writing programs against weak consistency is inherently difficult. My dissertation makes the job of writing safe programs against weak consistency easier, by introducing programming languages in which strong guarantees are defended from weakly-consistent influence, and in which programmers can write consistent-by-construction programs atop underlying weakly-consistent replication.</description>
+      <description>&lt;p&gt;After many years at Cornell University, I have finally completed my
+PhD journey!  My dissertation, entitled &amp;ldquo;Programming Safely with Weak
+(And Strong) Consistency&amp;rdquo;, is now available via
+&lt;a href=&#34;https://search.proquest.com/openview/1df00630d333277c5a74758c8f67c0d7/1.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ProQuest&lt;/a&gt;
+(or &lt;a href=&#34;https://languagesforsyste.ms/files/thesis.pdf&#34;&gt;directly from me&lt;/a&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;that-document-is-364-pages-is-there-a-summary&#34;&gt;That document is 364 pages, is there a summary?&lt;/h2&gt;
+&lt;p&gt;Sure! The unifying theme of my dissertation is that
+writing programs against weak consistency is inherently difficult.
+My dissertation makes the job of writing safe programs against weak
+consistency easier, by introducing programming languages in which
+strong guarantees are defended from weakly-consistent influence, and
+in which programmers can write consistent-by-construction programs
+atop underlying weakly-consistent replication.&lt;/p&gt;
+&lt;p&gt;The first of these languages is MixT, a new language for writing
+&lt;em&gt;mixed-consistency transactions&lt;/em&gt;.  These atomic transactions can
+operate against data at multiple consistency levels simultaneously,
+and are equipped with an information-flow type system which guarantees
+weakly-consistent observations cannot influence strongly-consistent
+actions.&lt;/p&gt;
+&lt;p&gt;While mixed-consistency transactions can defend strong data from weak
+observations, they cannot ensure that fully-weak code is itself
+correct.  To address this, we leverage monotonic data types to
+introduce a core language of datalog-like predicates and triggers. In
+this language, programmers can write monotonic functions over a set of
+monotonic shared objects, ultimately resulting in a boolean.  These
+monotonic, boolean-returning functions are stable predicates: once
+they have become true, they remain true for all time.  Actions which
+are predicated on these stable predicates cannot be invalidated by
+missed or future updates.&lt;/p&gt;
+&lt;p&gt;This monotonic language sits at the core of Derecho, a new system for
+building strongly-consistent distributed systems via replicated state
+machines.  Derecho&amp;rsquo;s Shared State Table (SST) implements monotonic
+datatypes atop Remote Direct Memory Access (RDMA), resulting in a
+high-performance, asynchronous substrate on which to build Derecho&amp;rsquo;s
+monotonic language.  Using this SST, we have rephrased the Paxos
+delivery condition monotonically, granting strong consistency despite
+the underlying asynchronous replication.&lt;/p&gt;
+&lt;p&gt;Finally Gallifrey exposes the monotonic reasoning properties of
+Derecho&amp;rsquo;s core language directly to the user, safely integrating
+monotonic datatypes into a traditional Java-like programming language.
+Gallifrey allows any object to be asynchronously replicated via
+&lt;em&gt;Restrictions&lt;/em&gt; to its interface, allowing only those operations which
+are safe to call concurrently.  Datatypes shared under these
+restrictions can be viewed monotonically, using a language of
+predicates and triggers similar to that at the core of Derecho.  A
+novel &lt;em&gt;linear region&lt;/em&gt;-based type system enforces that shared object
+restrictions are respected.&lt;/p&gt;
+&lt;h2 id=&#34;a-phd-takes-a-village&#34;&gt;A PhD Takes a Village&lt;/h2&gt;
+&lt;p&gt;And mine is no exception.  The kindness and generosity of the people
+who have surrounded me during my PhD never ceases to amaze.  Without
+the community surrounding me, attaining a PhD would be nearly
+impossible.  While my research and academic life has been touched by
+innumerable hands, I would like to specifically highlight the enormous
+assistance I have received from Andrew Myers, Ken Birman, Fabian
+Muehlboeck, Patrick LaFontaine and Danny Yang.  It is no exaggeration
+to say that without their help and guiding presence, I could never
+have completed this PhD.&lt;/p&gt;
+&lt;p&gt;To everyone who has helped me on this journey: thank you. Sincerely,
+thank you.&lt;/p&gt;
+&lt;p&gt;~Mae&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gallifrey: a New Language for Distributed Programming</title>
+      <link>https://languagesforsyste.ms/project/gallifrey/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 -0400</pubDate>
+      <guid>https://languagesforsyste.ms/project/gallifrey/</guid>
+      <description>&lt;h2 id=&#34;stop-me-if-you-ve-heard-this-one-before&#34;&gt;Stop me if you&amp;rsquo;ve heard this one before.&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;re working on your phone or tablet, editing an online document,
+and you get on a plane.  At first everything is fine; your edits are
+cached locally, and most of the application is local to your phone
+anyway.  But then something happens; the page refreshes, or your
+device auto-connects to the dodgy in-flight wifi, and your
+previously-functioning application suddenly begins to &amp;hellip; not.&lt;/p&gt;
+&lt;h3 id=&#34;distributed-programs-need-to-accept-disconnection&#34;&gt;Distributed programs need to accept disconnection.&lt;/h3&gt;
+&lt;p&gt;This common experience is a demonstration of an equally common flaw in
+modern client-facing distributed applications.  Trouble is, it&amp;rsquo;s
+fundamentally hard to write a wide-area, heavily replicated
+distributed system&amp;mdash;leading many applications to opt for a weaker
+model, like an &amp;ldquo;interactive web page&amp;rdquo; where data can be &amp;ldquo;cached at the
+client&amp;rdquo; for quick responsiveness.  But this model fundamentally
+&lt;em&gt;isn&amp;rsquo;t&lt;/em&gt; reality.  No matter what our frameworks tell us, distributed
+programs can&amp;rsquo;t use the same assumptions and metaphors as local
+concurrency or traditional websites.  Modern distributed frameworks
+must accept that caches are replicas, that replicas are fundamental to
+good performance, and that replicas &lt;em&gt;must&lt;/em&gt; tolerate periods of
+disconnection elegantly.  It is key that a distributed program should
+&lt;strong&gt;never implicitly block&lt;/strong&gt;, operating off of &lt;strong&gt;local replicas&lt;/strong&gt;
+whenever possible.&lt;/p&gt;
+&lt;h3 id=&#34;this-makes-consistency-hard&#34;&gt;This makes consistency hard.&lt;/h3&gt;
+&lt;p&gt;Because the moment you embrace the fact that your cached data is
+actually a first-class replica of shared global state, you must ask
+yourself how stale you can tolerate this data becoming, and what
+guarantees you need on the visibility of updates you make to this
+data.  Existing replicated systems that handle disconnection well do
+&lt;a href=&#34;https://firebase.google.com/docs/database/android/offline-capabilities#transactions-are-not-persisted-across-app-restarts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;quite&lt;/a&gt;
+&lt;a href=&#34;https://aphyr.com/posts/332-jepsen-crate-0-54-9-version-divergence&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;badly&lt;/a&gt;
+&lt;a href=&#34;https://docs.hazelcast.org/docs/3.8.6/manual/html-single/#network-partitioning-split-brain-syndrome&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;at&lt;/a&gt; &lt;a href=&#34;https://www.pubnub.com/blog/how-we-sped-up-eventually-consistent-databases-global-syncs-through-caching/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt;, giving rise to bizarre errors on
+re-connection including the ever-present threat of losing the last few
+hours&amp;mdash;or even days&amp;mdash;of work.  Correct applications must &lt;strong&gt;provide
+strong consistency&lt;/strong&gt; by default, while ensuring any deviation from
+sequential consistency is &lt;strong&gt;locally justified&lt;/strong&gt; and &lt;strong&gt;isolated&lt;/strong&gt; from
+sensitive parts of the application.&lt;/p&gt;
+&lt;h3 id=&#34;these-features-need-language-support&#34;&gt;These features need language support.&lt;/h3&gt;
+&lt;p&gt;There are a &lt;a href=&#34;http://bloom-lang.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;few&lt;/a&gt; (&lt;a href=&#34;https://lasp-lang.readme.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;very&lt;/a&gt; &lt;a href=&#34;https://2018.splashcon.org/details/splash-2018-SPLASH-I/15/What-happened-to-distributed-programming-languages-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;few&lt;/a&gt;) applications
+today which can offer transparent replication without sacrificing
+consistency.  But these applications are invariably hard to build, and
+prone to shipping &lt;a href=&#34;http://jepsen.io/analyses&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;subtle consistency bugs&lt;/a&gt;
+in production.  The properties that we&amp;rsquo;re proposing&amp;mdash;&lt;strong&gt;non-blocking
+replication&lt;/strong&gt; which &lt;strong&gt;tolerates disconnection&lt;/strong&gt; while ensuring
+&lt;strong&gt;strong consistency by default&lt;/strong&gt;&amp;mdash;are &lt;em&gt;global&lt;/em&gt; properties of a
+distributed application.  They can&amp;rsquo;t be enforced by a library alone,
+and they&amp;rsquo;re difficult enough that relying on &amp;ldquo;programmer discipline&amp;rdquo;
+has, repeatedly, been shown to be insufficient.  These features can
+only be enforced at the language level&amp;mdash;which is where we come in.&lt;/p&gt;
+&lt;h3 id=&#34;so-we-re-building-a-new-language&#34;&gt;So we&amp;rsquo;re building a new language.&lt;/h3&gt;
+&lt;p&gt;We&amp;rsquo;ve recently begun work on
+&lt;a href=&#34;http://drops.dagstuhl.de/opus/volltexte/2019/10554/pdf/LIPIcs-SNAPL-2019-11.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gallifrey&lt;/a&gt;,
+a new programming language designed to address exactly these issues.
+Gallifrey enables per-task programming, where each thread can share
+&lt;em&gt;any&lt;/em&gt; object with the world &lt;em&gt;without sacrificing consistency&lt;/em&gt;.
+Gallifrey is based on Java with a minimum of changes, making it easy
+to pick up and intuitive to use.&lt;/p&gt;
+&lt;p&gt;Gallifrey&amp;rsquo;s core feature is enabled via author-provided
+&lt;strong&gt;Restrictions&lt;/strong&gt; on objects&amp;rsquo; interfaces. When you want to share an
+object in Gallifrey, you must define a Restriction of its interface,
+limiting the available operations to only those which are safe to call
+concurrently and during disconnection.  This Restriction, in effect,
+transforms your normal local object into a
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CRDT&lt;/a&gt;,
+a class of object which has a rich and well-studied semantics for
+guaranteeing convergence even in the face of weakly-consistent
+updates.&lt;/p&gt;
+&lt;p&gt;To keep the world of Restricted objects from consuming entire local
+programs, Gallifrey also employs a hybrid &lt;strong&gt;affine ownership&lt;/strong&gt; type
+system which statically guarantees that an object (and everything it
+points to), when shared under a Restriction, can only be accessed via
+that Restriction.  We&amp;rsquo;ve managed to take the best of affine typing
+(from languages like &lt;a href=&#34;https://www.rust-lang.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rust&lt;/a&gt;) and apply it
+to Gallifrey, while still allowing a majority of Gallifrey code to
+enjoy the [almost] unrestricted aliasing and pervasive mutability
+common to Java programs.&lt;/p&gt;
+&lt;p&gt;Finally we introduce &lt;strong&gt;branches&lt;/strong&gt;, a new take on transactions inspired
+by the eponymous concept from version control.  Opening a branch
+allows a program to create a new scope which is totally isolated from
+the rest of the world, in effect voluntarily disconnecting a portion
+of the program from the wider Gallifrey network.  While within a
+branch, programmers can perform &lt;strong&gt;provisional&lt;/strong&gt; operations which
+&lt;em&gt;don&amp;rsquo;t&lt;/em&gt; guarantee sequential consistency, &lt;em&gt;without&lt;/em&gt; worrying that these
+operations will threaten the consistency of the wider application.&lt;/p&gt;
+&lt;p&gt;More details can be found in the &lt;a href=&#34;../../publication/gallifrey/&#34;&gt;Gallifrey SNAPL paper&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Mixing Consistency with MixT: Technical Report Available!</title>
       <link>https://languagesforsyste.ms/post/mixt-tr/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/post/mixt-tr/</guid>
-      <description>It&amp;rsquo;s been a long wait. It was our great pleasure to present the MixT paper at this year&amp;rsquo;s PLDI, but we always felt that the conference version was missing a few details and extra explanations which (we sincerely hope) would go a long way towards explaining the MixT approach to distributed transactions. So it makes us overjoyed to finally make the extended Technical Report of the MixT paper available to the public.</description>
-    </item>
-    
-    <item>
-      <title>Gallifrey: a New Language for Distributed Programming</title>
-      <link>https://languagesforsyste.ms/project/gallifrey/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://languagesforsyste.ms/project/gallifrey/</guid>
-      <description>Stop me if you&amp;rsquo;ve heard this one before. You&amp;rsquo;re working on your phone or tablet, editing an online document, and you get on a plane. At first everything is fine; your edits are cached locally, and most of the application is local to your phone anyway. But then something happens; the page refreshes, or your device auto-connects to the dodgy in-flight wifi, and your previously-functioning application suddenly begins to &amp;hellip; not.</description>
+      <description>&lt;h2 id=&#34;it-s-been-a-long-wait&#34;&gt;It&amp;rsquo;s been a long wait.&lt;/h2&gt;
+&lt;p&gt;It was our great pleasure to present the &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3192375&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MixT paper&lt;/a&gt; at this year&amp;rsquo;s PLDI, but we always felt that the conference version was missing a few details and extra explanations which (we sincerely hope) would go a long way towards explaining the MixT approach to distributed transactions.  So it makes us overjoyed to finally make the extended &lt;a href=&#34;../../files/mixt-tr.pdf&#34;&gt;Technical Report&lt;/a&gt; of the MixT paper available to the public.&lt;/p&gt;
+&lt;h2 id=&#34;so-what-s-this-mixt-thing-all-about-anyway&#34;&gt;So what&amp;rsquo;s this MixT thing all about, anyway?&lt;/h2&gt;
+&lt;p&gt;MixT is a domain-specific programming language for writing transactions, embedded into C++.  What makes MixT unique is its approach to consistency and transaction isolation: rather than associate consistency with operations, MixT &lt;strong&gt;associates consistency with data&lt;/strong&gt; and expects programmers to use &lt;strong&gt;multiple consistency models&lt;/strong&gt; in the same application.  With MixT:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Transactions compile down to a sequence of &lt;strong&gt;standard, single-consistency transactions&lt;/strong&gt; appropriate for execution on any number of SQL/NoSQL/NewSQL datastores.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An &lt;strong&gt;information-flow type system&lt;/strong&gt; keeps your consistent data safe from corruption by less-consistent data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can use &lt;strong&gt;multiple consistency models&lt;/strong&gt; even within a &lt;strong&gt;single&lt;/strong&gt; transaction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A single transaction can execute across &lt;strong&gt;multiple independent datastores&lt;/strong&gt;, while still &lt;strong&gt;preserving write atomicity&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transactions are &lt;strong&gt;expressive&lt;/strong&gt;; you can define &lt;strong&gt;custom operations&lt;/strong&gt; as methods, use while-loops and if-statements, and generally write code that looks and feels like the surrounding C++.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;but-the-best-explanation-is-the-paper&#34;&gt;But the best explanation is &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3192375&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the paper&lt;/a&gt;.&lt;/h3&gt;
+&lt;h2 id=&#34;what-s-new-for-the-tr&#34;&gt;What&amp;rsquo;s new for the TR?&lt;/h2&gt;
+&lt;p&gt;The technical report contains many details not previously seen in the MixT paper!  You can expect to see extended rules for typing and translation, an all-new section featuring correctness arguments and read witnesses, and a loose formalization of how to lift isolation levels (in the database sense) to distributed consistency models.  And more!&lt;/p&gt;
+&lt;h3 id=&#34;you-can-find-it-here&#34;&gt;You can find it &lt;a href=&#34;../../files/mixt-tr.pdf&#34;&gt;here&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Happy reading!&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Programming Replicated, Distributed Systems</title>
       <link>https://languagesforsyste.ms/project/languages-for-distribution/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
-      
+      <pubDate>Wed, 20 Jun 2018 00:00:00 -0400</pubDate>
       <guid>https://languagesforsyste.ms/project/languages-for-distribution/</guid>
-      <description>Concurrency makes everything hard For many programmers, writing efficient concurrent datastructures is an exercise in scouring github and hoping that code quality and number of &amp;ldquo;stars&amp;rdquo; really do correlate. When it comes time to write your own concurrent datastructures, queue many sleepless nights spent worrying about whether this or that particular concurrency primitive is fast enough, or correct enough, to make the code work at the speeds you need. If there is any solace felt, it comes from the once-safe assumption of strong consistency; that, no matter how many races we might have missed, at least the result of the program will be some valid interleaving of concurrent threads.</description>
+      <description>&lt;h2 id=&#34;concurrency-makes-everything-hard&#34;&gt;Concurrency makes everything hard&lt;/h2&gt;
+&lt;p&gt;For many programmers, writing efficient concurrent datastructures is an exercise in scouring github and hoping that code quality and number of &amp;ldquo;stars&amp;rdquo; really do correlate. When it comes time to &lt;em&gt;write&lt;/em&gt; your own concurrent datastructures, queue many sleepless nights spent worrying about whether this or that particular concurrency primitive is fast enough, or correct enough, to make the code work at the speeds you need.  If there is any solace felt, it comes from the once-safe assumption of strong consistency; that, no matter how many races we might have missed, at least the result of the program will be &lt;em&gt;some&lt;/em&gt; valid interleaving of concurrent threads.&lt;/p&gt;
+&lt;h3 id=&#34;this-assumption-is-wrong&#34;&gt;This assumption is wrong.&lt;/h3&gt;
+&lt;p&gt;Because hardware isn&amp;rsquo;t as helpful as it once was.  Modern &lt;a href=&#34;http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0553a/CHDBIJJE.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;processor&lt;/a&gt; and &lt;a href=&#34;https://en.cppreference.com/w/cpp/language/memory_model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;language&lt;/a&gt; memory models reduce the available consistency assumptions so much that it&amp;rsquo;s possible to &lt;a href=&#34;https://www.cl.cam.ac.uk/~pes20/cpp/notes42.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;read values which were never written&lt;/a&gt;, justify your own reads, and arbitrarily miss updates from concurrent threads. Simple patterns, like initializing an object and then handing it off directly to a newly-spawned thread, are &lt;em&gt;simply not guaranteed to work&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;and-distribution-makes-it-harder&#34;&gt;And distribution makes it harder.&lt;/h3&gt;
+&lt;p&gt;In a distributed setting, the costs of using stronger consistency models grow exponentially with the number of replicas in your system (essential for fault-tolerance) and the distance between these replicas (essential for global performance and availability).  While there are a lot of good people doing excellent work to try and bring strongly-consistent shared data to a geo-distributed setting, the fundamentals are still not in our favor.  And, far more urgently, major parts of the web have already moved to weaker consistency models.&lt;/p&gt;
+&lt;h3 id=&#34;we-re-going-to-fix-that-or-at-least-help&#34;&gt;We&amp;rsquo;re going to fix that. Or at least help.&lt;/h3&gt;
+&lt;p&gt;This project aims to bring the power of programming languages to bear on the world of weakly-consistent distributed programming.  Our secret sauce is &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=360056&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;information flow&lt;/a&gt;, a key technology borrowed from the security literature and applied with new life here.  Using information flow, it&amp;rsquo;s possible to ensure that weakly-consistent observations can never unduly influence strongly-consistent computations; it makes the points of crossover explicit, statically requiring that programmers upgrade the consistency of their observations when appropriate.&lt;/p&gt;
+&lt;p&gt;This technique is powerful; for more details, see our &lt;a href=&#34;../../publication/mixt&#34;&gt;paper&lt;/a&gt;  from &lt;a href=&#34;https://conf.researchr.org/home/pldi-2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PLDI 2018&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;and-we-re-not-done-yet&#34;&gt;And we&amp;rsquo;re not done yet.&lt;/h3&gt;
+&lt;p&gt;Our new project &lt;a href=&#34;../gallifrey&#34;&gt;Gallifrey&lt;/a&gt; continues this legacy with a new programming language for the distributed world.  Ready more at its &lt;a href=&#34;../gallifrey&#34;&gt;project page!&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Derecho: Programming the Datacenter</title>
       <link>https://languagesforsyste.ms/project/derecho/</link>
-      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jun 2015 00:00:00 -0400</pubDate>
       <guid>https://languagesforsyste.ms/project/derecho/</guid>
-      <description>In-datacenter replication just got a lot faster. Derecho is a new framework for building replicated, fault-tolerant distributed systems within a datacenter. At its core, Derecho provides a best-in-class consistent multicast abstraction, sending multi-target messages at blazing speed and in lock-step. Derecho&amp;rsquo;s object-oriented programming layer makes it easy to build any distributed application straight from a standard, single-machine approach; individual classes are automatically replicated in user-specified configurations, and a straightforward, type-safe RPC mechanism allows easy communication between replica groups.</description>
+      <description>&lt;h2 id=&#34;in-datacenter-replication-just-got-a-lot-faster&#34;&gt;In-datacenter replication just got a lot faster.&lt;/h2&gt;
+&lt;p&gt;Derecho is a new framework for building replicated, fault-tolerant distributed systems within a datacenter.  At its core, Derecho provides a best-in-class consistent multicast abstraction, sending multi-target messages at blazing speed and in lock-step.  Derecho&amp;rsquo;s object-oriented programming layer makes it easy to build any distributed application straight from a standard, single-machine approach; individual classes are automatically replicated in user-specified configurations, and a straightforward, type-safe RPC mechanism allows easy communication between replica groups.&lt;/p&gt;
+&lt;p&gt;Derecho realizes a major observation: that programming a distributed system with an eye towards protocol convergence (or &lt;a href=&#34;../languages-for-distribution&#34;&gt;strong eventual consistency&lt;/a&gt;) yields significant performance benefits by delaying consensus events for as long as possible.  Derecho&amp;rsquo;s core protocols are written in a simple convergent programming language (watch this space), giving us constructive confidence that our protocols never diverge &amp;ndash; which avoids much of the proof (and correctness) burden of traditional distributed system design.&lt;/p&gt;
+&lt;p&gt;This project is a major collaboration between several groups at Cornell University; the group is expanding every day, but has so far included Sagar Jha, Jonathan Behrens, Theo Gkountouvas, Mae Milano, Weijia Song, Edward Tremel, Sydney Zink, Kenneth P. Birman, Robbert Van Renesse, and the students of CS4999.  For more detail, you should check the &lt;a href=&#34;https://derecho-project.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;project website&lt;/a&gt; or read about it on &lt;a href=&#34;http://thinkingaboutdistributedsystems.blogspot.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ken Birman&amp;rsquo;s blog&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

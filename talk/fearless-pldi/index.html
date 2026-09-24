@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.163.3">
   <meta name="author" content="Mae Milano">
 
   
@@ -14,6 +14,8 @@
   
   
     
+  
+  
   
   <meta name="description" content="This talk proposes a new type system for concurrent programs, allowing threads to exchange complex, arbitrarily connected object graphs without risking destructive data races. While this goal is shared by a rich history of past work, existing solutions either rely on strictly enforced heap invariants that prohibit natural programming patterns or demand pervasive annotations that bring formidable formal overhead to the simplest programming tasks. As a result, past systems cannot express intuitively simple code without surprising and unnatural rewrites. Our work avoids these pitfalls through a novel type system that provides sound reasoning about separation in the heap while remaining amenable to whatever style of heap manipulations the programmer desires. This sweet spot is attained by tracking an invariant as strong as prior work, but allowing arbitrary violations to arise and persist across the program until recovery is needed. We present this system with large code examples demonstrating natural expression of patterns prior work balks at, a formal proof of correctness—that well-typed programs cannot encounter destructive data races at run time—and an efficient type checker implemented in Gallina and Ocaml.">
 
@@ -77,22 +79,10 @@
 
   
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-130045632-2', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
   
 
+  
+  
   
   <link rel="alternate" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
   <link rel="feed" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
@@ -427,13 +417,9 @@
     </li>
     <li>
       <a class="email"
-	  href="#"
-	  data-contact="bGUtZW1haWxAdGhlLWRvbWFpbi5jb20="
-      data-subj="QW4gQW1hemluZyBTdWJqZWN0"
-      onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">
+         href="mailto:?subject=Fearless%20Concurrency%20PLDI%20Talk&amp;body=https%3a%2f%2flanguagesforsyste.ms%2ftalk%2ffearless-pldi%2f">
         <i class="fas fa-envelope"></i>
       </a>
-	  
     </li>
   </ul>
 </div>
@@ -600,7 +586,7 @@
 
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
-  <img class="portrait mr-3" src="/img/winterface-small.png" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/img/princeton-portrait.jpg" itemprop="image" alt="Avatar">
   
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/">Mae Milano</a></h5>
@@ -703,7 +689,7 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="https://languagesforsyste.ms/talk/fearless-apple/" rel="next">A developer-centric approach to Fearless Concurrency</a>
+    <a href="https://languagesforsyste.ms/talk/fearless-mit/" rel="next">A New Type System for Fearless Concurrency</a>
   </div>
   
   
@@ -722,7 +708,7 @@
   
 
   <p class="powered-by">
-    &copy; 2020 &middot; 
+    © 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -838,7 +824,7 @@
     
     
     
-    <script src="/js/academic.min.14cafafda844d960749b7551524d1c3a.js"></script>
+    <script src="/js/academic.min.4a2962d241ac8fe8db799a8e808e7e48.js"></script>
 
     
 

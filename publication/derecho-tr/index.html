@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.163.3">
   <meta name="author" content="Mae Milano">
 
   
@@ -15,7 +15,9 @@
   
     
   
-  <meta name="description" content="The coming generation of Internet-of-Things (IoT) applications will process massive amounts of incoming data while supporting data mining and online learning. In cases with demanding real-time requirements, such systems behave as smart memories: high-bandwidth services that capture sensor input, proceses it using machine-learning tools, replicate and store “interesting” data (discarding uninteresting content), update knowledge models, and trigger urgently-needed responses. Derecho is a high-throughput librry for building smart memories and similar services. At its core Derecho implements atomic multicast and state machine replication. Derecho’s replicated&lt;T&gt; template defines a replicated type; the corresponding objects are associated with subgroups, which can be sharded into keyvalue structures. The persistent&lt;T&gt; and volatile&lt;T&gt; storage templates implement version vectors with optional NVM persistence. These support time-indexed access, offering lock-free snapshot isolation that blends temporal precision and causal consistency. Derecho automates application management, supporting multigroup structures and providing consistent knowledge of the current membership mapping. A query can access data from many shards or subgroups, and consistency is guaranteed without any form of distributed locking. Whereas many systems run consensus on the critical path, Derecho requires consensus only when updating membership. By leveraging an RDMA data plane and NVM storage, and adopting a novel receiver-side batching technique, Derecho can saturate a 12.5GB RDMA network, sending millions of events per second in each subgroup or shard. In a single subgroup with 2-16 members, throughput peaks at 16 GB/s for large (100MB or more) objects. When using version-vector storage, Derecho is limited by the speed of the SSD or RamDisk, showing no loss of performance as group sizes grow. While key-value subgroups would typically use 2 or 3-member shards, unsharded subgroups could be large. In tests with a 128-member group, Derecho’s multicast and Paxos protocols were just 2-3x slower than for a small group, depending on the traffic pattern. With network contention, slow members, or overlapping groups that generate concurrent traffic, Derecho’s protocols remain stable and adapt to the available bandwidth.">
+  
+  
+  <meta name="description" content="The coming generation of Internet-of-Things (IoT) applications will process massive amounts of incoming data while supporting data mining and online learning. In cases with demanding real-time requirements, such systems behave as smart memories: high-bandwidth services that capture sensor input, proceses it using machine-learning tools, replicate and store “interesting” data (discarding uninteresting content), update knowledge models, and trigger urgently-needed responses. Derecho is a high-throughput librry for building smart memories and similar services. At its core Derecho implements atomic multicast and state machine replication. Derecho’s replicated template defines a replicated type; the corresponding objects are associated with subgroups, which can be sharded into keyvalue structures. The persistent and volatile storage templates implement version vectors with optional NVM persistence. These support time-indexed access, offering lock-free snapshot isolation that blends temporal precision and causal consistency. Derecho automates application management, supporting multigroup structures and providing consistent knowledge of the current membership mapping. A query can access data from many shards or subgroups, and consistency is guaranteed without any form of distributed locking. Whereas many systems run consensus on the critical path, Derecho requires consensus only when updating membership. By leveraging an RDMA data plane and NVM storage, and adopting a novel receiver-side batching technique, Derecho can saturate a 12.5GB RDMA network, sending millions of events per second in each subgroup or shard. In a single subgroup with 2-16 members, throughput peaks at 16 GB/s for large (100MB or more) objects. When using version-vector storage, Derecho is limited by the speed of the SSD or RamDisk, showing no loss of performance as group sizes grow. While key-value subgroups would typically use 2 or 3-member shards, unsharded subgroups could be large. In tests with a 128-member group, Derecho’s multicast and Paxos protocols were just 2-3x slower than for a small group, depending on the traffic pattern. With network contention, slow members, or overlapping groups that generate concurrent traffic, Derecho’s protocols remain stable and adapt to the available bandwidth.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://languagesforsyste.ms/publication/derecho-tr/">
@@ -77,22 +79,10 @@
 
   
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-130045632-2', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
   
 
+  
+  
   
   <link rel="alternate" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
   <link rel="feed" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
@@ -112,7 +102,7 @@
   <meta property="og:site_name" content="Mae Milano">
   <meta property="og:url" content="https://languagesforsyste.ms/publication/derecho-tr/">
   <meta property="og:title" content="Building Smart Memories and Cloud Services with Derecho | Mae Milano">
-  <meta property="og:description" content="The coming generation of Internet-of-Things (IoT) applications will process massive amounts of incoming data while supporting data mining and online learning. In cases with demanding real-time requirements, such systems behave as smart memories: high-bandwidth services that capture sensor input, proceses it using machine-learning tools, replicate and store “interesting” data (discarding uninteresting content), update knowledge models, and trigger urgently-needed responses. Derecho is a high-throughput librry for building smart memories and similar services. At its core Derecho implements atomic multicast and state machine replication. Derecho’s replicated&lt;T&gt; template defines a replicated type; the corresponding objects are associated with subgroups, which can be sharded into keyvalue structures. The persistent&lt;T&gt; and volatile&lt;T&gt; storage templates implement version vectors with optional NVM persistence. These support time-indexed access, offering lock-free snapshot isolation that blends temporal precision and causal consistency. Derecho automates application management, supporting multigroup structures and providing consistent knowledge of the current membership mapping. A query can access data from many shards or subgroups, and consistency is guaranteed without any form of distributed locking. Whereas many systems run consensus on the critical path, Derecho requires consensus only when updating membership. By leveraging an RDMA data plane and NVM storage, and adopting a novel receiver-side batching technique, Derecho can saturate a 12.5GB RDMA network, sending millions of events per second in each subgroup or shard. In a single subgroup with 2-16 members, throughput peaks at 16 GB/s for large (100MB or more) objects. When using version-vector storage, Derecho is limited by the speed of the SSD or RamDisk, showing no loss of performance as group sizes grow. While key-value subgroups would typically use 2 or 3-member shards, unsharded subgroups could be large. In tests with a 128-member group, Derecho’s multicast and Paxos protocols were just 2-3x slower than for a small group, depending on the traffic pattern. With network contention, slow members, or overlapping groups that generate concurrent traffic, Derecho’s protocols remain stable and adapt to the available bandwidth.">
+  <meta property="og:description" content="The coming generation of Internet-of-Things (IoT) applications will process massive amounts of incoming data while supporting data mining and online learning. In cases with demanding real-time requirements, such systems behave as smart memories: high-bandwidth services that capture sensor input, proceses it using machine-learning tools, replicate and store “interesting” data (discarding uninteresting content), update knowledge models, and trigger urgently-needed responses. Derecho is a high-throughput librry for building smart memories and similar services. At its core Derecho implements atomic multicast and state machine replication. Derecho’s replicated template defines a replicated type; the corresponding objects are associated with subgroups, which can be sharded into keyvalue structures. The persistent and volatile storage templates implement version vectors with optional NVM persistence. These support time-indexed access, offering lock-free snapshot isolation that blends temporal precision and causal consistency. Derecho automates application management, supporting multigroup structures and providing consistent knowledge of the current membership mapping. A query can access data from many shards or subgroups, and consistency is guaranteed without any form of distributed locking. Whereas many systems run consensus on the critical path, Derecho requires consensus only when updating membership. By leveraging an RDMA data plane and NVM storage, and adopting a novel receiver-side batching technique, Derecho can saturate a 12.5GB RDMA network, sending millions of events per second in each subgroup or shard. In a single subgroup with 2-16 members, throughput peaks at 16 GB/s for large (100MB or more) objects. When using version-vector storage, Derecho is limited by the speed of the SSD or RamDisk, showing no loss of performance as group sizes grow. While key-value subgroups would typically use 2 or 3-member shards, unsharded subgroups could be large. In tests with a 128-member group, Derecho’s multicast and Paxos protocols were just 2-3x slower than for a small group, depending on the traffic pattern. With network contention, slow members, or overlapping groups that generate concurrent traffic, Derecho’s protocols remain stable and adapt to the available bandwidth.">
   
   
     
@@ -451,13 +441,9 @@
     </li>
     <li>
       <a class="email"
-	  href="#"
-	  data-contact="bGUtZW1haWxAdGhlLWRvbWFpbi5jb20="
-      data-subj="QW4gQW1hemluZyBTdWJqZWN0"
-      onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">
+         href="mailto:?subject=Building%20Smart%20Memories%20and%20Cloud%20Services%20with%20Derecho&amp;body=https%3a%2f%2flanguagesforsyste.ms%2fpublication%2fderecho-tr%2f">
         <i class="fas fa-envelope"></i>
       </a>
-	  
     </li>
   </ul>
 </div>
@@ -632,7 +618,7 @@
   
 
   <p class="powered-by">
-    &copy; 2020 &middot; 
+    © 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -748,7 +734,7 @@
     
     
     
-    <script src="/js/academic.min.14cafafda844d960749b7551524d1c3a.js"></script>
+    <script src="/js/academic.min.4a2962d241ac8fe8db799a8e808e7e48.js"></script>
 
     
 

@@ -1,5 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication_types/1/</loc>
+      <lastmod>2026-09-24T00:02:48-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication/fully-automatic-type-inference/</loc>
+      <lastmod>2026-09-24T00:02:48-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/</loc>
+      <lastmod>2026-09-24T00:02:48-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication_types/</loc>
+      <lastmod>2026-09-24T00:02:48-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication/interactive-theorem-provers-proof/</loc>
+      <lastmod>2026-09-24T00:02:48-04:00</lastmod>
+    </url>
+    
   
     
     <url>
@@ -29,7 +68,15 @@
     <url>
     
       <loc>https://languagesforsyste.ms/post/looking-for-students/</loc>
-      <lastmod>2023-10-25T15:52:12-07:00</lastmod>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication_types/3/</loc>
+      <lastmod>2025-06-02T19:16:09-04:00</lastmod>
     </url>
     
   
@@ -84,16 +131,24 @@
     
     <url>
     
-      <loc>https://languagesforsyste.ms/publication/katara/</loc>
-      <lastmod>2025-06-02T19:16:09-04:00</lastmod>
+      <loc>https://languagesforsyste.ms/tags/</loc>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>https://languagesforsyste.ms/talk/fearless-mit/</loc>
+      <loc>https://languagesforsyste.ms/tags/teaching/</loc>
       <lastmod>2024-01-02T20:00:31-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/publication/katara/</loc>
+      <lastmod>2025-06-02T19:16:09-04:00</lastmod>
     </url>
     
   
@@ -108,15 +163,7 @@
     
     <url>
     
-      <loc>https://languagesforsyste.ms/talk/fearless-pldi/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/talk/strangeloop/</loc>
+      <loc>https://languagesforsyste.ms/talk/fearless-mit/</loc>
       <lastmod>2024-01-02T20:00:31-08:00</lastmod>
     </url>
     
@@ -132,7 +179,39 @@
     
     <url>
     
+      <loc>https://languagesforsyste.ms/tags/concurrency/</loc>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/tags/distributed-systems/</loc>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/talk/fearless-pldi/</loc>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://languagesforsyste.ms/project/hydro/</loc>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/tags/linear-types/</loc>
       <lastmod>2022-11-22T17:15:53-05:00</lastmod>
     </url>
     
@@ -142,6 +221,38 @@
     
       <loc>https://languagesforsyste.ms/project/morphic/</loc>
       <lastmod>2024-01-02T19:12:50-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/tags/ownership/</loc>
+      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/talk/strangeloop/</loc>
+      <lastmod>2024-01-02T20:00:31-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/tags/programming-languages/</loc>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/project/</loc>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
     </url>
     
   
@@ -164,8 +275,24 @@
     
     <url>
     
+      <loc>https://languagesforsyste.ms/tags/consistency/</loc>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://languagesforsyste.ms/post/dissertation/</loc>
       <lastmod>2021-12-31T09:57:18-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/tags/transactions/</loc>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
     </url>
     
   
@@ -220,23 +347,15 @@
     
     <url>
     
+      <loc>https://languagesforsyste.ms/publication_types/4/</loc>
+      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://languagesforsyste.ms/publication/mixt-tr/</loc>
-      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/talk/mixt/</loc>
-      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/post/mixt-tr/</loc>
       <lastmod>2021-12-31T09:57:18-08:00</lastmod>
     </url>
     
@@ -252,8 +371,24 @@
     
     <url>
     
+      <loc>https://languagesforsyste.ms/post/mixt-tr/</loc>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://languagesforsyste.ms/talk/mixt/</loc>
+      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://languagesforsyste.ms/project/languages-for-distribution/</loc>
-      <lastmod>2019-11-03T23:00:39-05:00</lastmod>
+      <lastmod>2026-09-23T23:55:47-04:00</lastmod>
     </url>
     
   
@@ -332,143 +467,7 @@
     
     <url>
     
-      <loc>https://languagesforsyste.ms/publication_types/1/</loc>
-      <lastmod>2025-06-02T19:10:17-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/publication_types/3/</loc>
-      <lastmod>2024-01-02T19:12:50-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/publication_types/4/</loc>
-      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://languagesforsyste.ms/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/concurrency/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/consistency/</loc>
-      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/distributed-systems/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/linear-types/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/</loc>
-      <lastmod>2018-10-01T00:16:12+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/ownership/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/programming-languages/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/project/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/publication_types/</loc>
-      <lastmod>2025-06-02T19:10:17-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/</loc>
-      <lastmod>2022-11-22T17:15:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/transactions/</loc>
-      <lastmod>2021-12-31T09:57:18-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://languagesforsyste.ms/tags/teaching/</loc>
-      <lastmod>2023-01-07T17:57:40-08:00</lastmod>
-      <priority>0</priority>
     </url>
     
   

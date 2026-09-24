@@ -819,7 +819,7 @@ article {
 }
 
 .article-title a {
-  color: #3f51b5
+  color: #3f51b5;
   transition: color 0.6s ease;
 }
 
@@ -1144,8 +1144,8 @@ article .article-metadata {
 }
 
 .project-title {
- font-size: 1.4rem;
- font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: bold;
   margin-bottom: 6px;
 }
 

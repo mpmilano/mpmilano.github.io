@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.163.3">
   <meta name="author" content="Mae Milano">
 
   
@@ -14,6 +14,8 @@
   
   
     
+  
+  
   
   <meta name="description" content="Gallifrey is a new programming language for distributed wide-area applications.  Gallifrey programs share state via replication, granting fast access to data without introducing mandatory synchronization points, all while maintaining sequential consistency by default.  Gallifrey aims to be easy-to-use, requiring a minimal annotation overhead atop an otherwise Java-like language.">
 
@@ -77,22 +79,10 @@
 
   
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-130045632-2', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
   
 
+  
+  
   
   <link rel="alternate" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
   <link rel="feed" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
@@ -119,7 +109,7 @@
   <meta property="og:image" content="https://languagesforsyste.ms/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-06-20T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2018-06-20T00:00:00-04:00">
   
   <meta property="article:modified_time" content="2020-04-05T00:01:58-04:00">
   
@@ -371,7 +361,7 @@
     
         Last updated on
     
-    <meta content="2018-06-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <meta content="2018-06-20 00:00:00 -0400 EDT" itemprop="datePublished">
     <time datetime="2020-04-05 00:01:58 -0400 EDT" itemprop="dateModified">
       Apr 5, 2020
     </time>
@@ -424,13 +414,9 @@
     </li>
     <li>
       <a class="email"
-	  href="#"
-	  data-contact="bGUtZW1haWxAdGhlLWRvbWFpbi5jb20="
-      data-subj="QW4gQW1hemluZyBTdWJqZWN0"
-      onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">
+         href="mailto:?subject=Gallifrey%3a%20a%20New%20Language%20for%20Distributed%20Programming&amp;body=https%3a%2f%2flanguagesforsyste.ms%2fproject%2fgallifrey%2f">
         <i class="fas fa-envelope"></i>
       </a>
-	  
     </li>
   </ul>
 </div>
@@ -466,19 +452,14 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<h2 id="stop-me-if-you-ve-heard-this-one-before">Stop me if you&rsquo;ve heard this one before.</h2>
-
+      <h2 id="stop-me-if-you-ve-heard-this-one-before">Stop me if you&rsquo;ve heard this one before.</h2>
 <p>You&rsquo;re working on your phone or tablet, editing an online document,
 and you get on a plane.  At first everything is fine; your edits are
 cached locally, and most of the application is local to your phone
 anyway.  But then something happens; the page refreshes, or your
 device auto-connects to the dodgy in-flight wifi, and your
 previously-functioning application suddenly begins to &hellip; not.</p>
-
 <h3 id="distributed-programs-need-to-accept-disconnection">Distributed programs need to accept disconnection.</h3>
-
 <p>This common experience is a demonstration of an equally common flaw in
 modern client-facing distributed applications.  Trouble is, it&rsquo;s
 fundamentally hard to write a wide-area, heavily replicated
@@ -493,29 +474,25 @@ good performance, and that replicas <em>must</em> tolerate periods of
 disconnection elegantly.  It is key that a distributed program should
 <strong>never implicitly block</strong>, operating off of <strong>local replicas</strong>
 whenever possible.</p>
-
 <h3 id="this-makes-consistency-hard">This makes consistency hard.</h3>
-
 <p>Because the moment you embrace the fact that your cached data is
 actually a first-class replica of shared global state, you must ask
 yourself how stale you can tolerate this data becoming, and what
 guarantees you need on the visibility of updates you make to this
 data.  Existing replicated systems that handle disconnection well do
-<a href="https://firebase.google.com/docs/database/android/offline-capabilities#transactions-are-not-persisted-across-app-restarts" target="_blank">quite</a>
-<a href="https://aphyr.com/posts/332-jepsen-crate-0-54-9-version-divergence" target="_blank">badly</a>
-<a href="https://docs.hazelcast.org/docs/3.8.6/manual/html-single/#network-partitioning-split-brain-syndrome" target="_blank">at</a> <a href="https://www.pubnub.com/blog/how-we-sped-up-eventually-consistent-databases-global-syncs-through-caching/" target="_blank">this</a>, giving rise to bizarre errors on
+<a href="https://firebase.google.com/docs/database/android/offline-capabilities#transactions-are-not-persisted-across-app-restarts" target="_blank" rel="noopener">quite</a>
+<a href="https://aphyr.com/posts/332-jepsen-crate-0-54-9-version-divergence" target="_blank" rel="noopener">badly</a>
+<a href="https://docs.hazelcast.org/docs/3.8.6/manual/html-single/#network-partitioning-split-brain-syndrome" target="_blank" rel="noopener">at</a> <a href="https://www.pubnub.com/blog/how-we-sped-up-eventually-consistent-databases-global-syncs-through-caching/" target="_blank" rel="noopener">this</a>, giving rise to bizarre errors on
 re-connection including the ever-present threat of losing the last few
 hours&mdash;or even days&mdash;of work.  Correct applications must <strong>provide
 strong consistency</strong> by default, while ensuring any deviation from
 sequential consistency is <strong>locally justified</strong> and <strong>isolated</strong> from
 sensitive parts of the application.</p>
-
 <h3 id="these-features-need-language-support">These features need language support.</h3>
-
-<p>There are a <a href="http://bloom-lang.net/" target="_blank">few</a> (<a href="https://lasp-lang.readme.io/" target="_blank">very</a> <a href="https://2018.splashcon.org/details/splash-2018-SPLASH-I/15/What-happened-to-distributed-programming-languages-" target="_blank">few</a>) applications
+<p>There are a <a href="http://bloom-lang.net/" target="_blank" rel="noopener">few</a> (<a href="https://lasp-lang.readme.io/" target="_blank" rel="noopener">very</a> <a href="https://2018.splashcon.org/details/splash-2018-SPLASH-I/15/What-happened-to-distributed-programming-languages-" target="_blank" rel="noopener">few</a>) applications
 today which can offer transparent replication without sacrificing
 consistency.  But these applications are invariably hard to build, and
-prone to shipping <a href="http://jepsen.io/analyses" target="_blank">subtle consistency bugs</a>
+prone to shipping <a href="http://jepsen.io/analyses" target="_blank" rel="noopener">subtle consistency bugs</a>
 in production.  The properties that we&rsquo;re proposing&mdash;<strong>non-blocking
 replication</strong> which <strong>tolerates disconnection</strong> while ensuring
 <strong>strong consistency by default</strong>&mdash;are <em>global</em> properties of a
@@ -523,38 +500,33 @@ distributed application.  They can&rsquo;t be enforced by a library alone,
 and they&rsquo;re difficult enough that relying on &ldquo;programmer discipline&rdquo;
 has, repeatedly, been shown to be insufficient.  These features can
 only be enforced at the language level&mdash;which is where we come in.</p>
-
 <h3 id="so-we-re-building-a-new-language">So we&rsquo;re building a new language.</h3>
-
 <p>We&rsquo;ve recently begun work on
-<a href="http://drops.dagstuhl.de/opus/volltexte/2019/10554/pdf/LIPIcs-SNAPL-2019-11.pdf" target="_blank">Gallifrey</a>,
+<a href="http://drops.dagstuhl.de/opus/volltexte/2019/10554/pdf/LIPIcs-SNAPL-2019-11.pdf" target="_blank" rel="noopener">Gallifrey</a>,
 a new programming language designed to address exactly these issues.
 Gallifrey enables per-task programming, where each thread can share
 <em>any</em> object with the world <em>without sacrificing consistency</em>.
 Gallifrey is based on Java with a minimum of changes, making it easy
 to pick up and intuitive to use.</p>
-
 <p>Gallifrey&rsquo;s core feature is enabled via author-provided
 <strong>Restrictions</strong> on objects&rsquo; interfaces. When you want to share an
 object in Gallifrey, you must define a Restriction of its interface,
 limiting the available operations to only those which are safe to call
 concurrently and during disconnection.  This Restriction, in effect,
 transforms your normal local object into a
-<a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type" target="_blank">CRDT</a>,
+<a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type" target="_blank" rel="noopener">CRDT</a>,
 a class of object which has a rich and well-studied semantics for
 guaranteeing convergence even in the face of weakly-consistent
 updates.</p>
-
 <p>To keep the world of Restricted objects from consuming entire local
 programs, Gallifrey also employs a hybrid <strong>affine ownership</strong> type
 system which statically guarantees that an object (and everything it
 points to), when shared under a Restriction, can only be accessed via
 that Restriction.  We&rsquo;ve managed to take the best of affine typing
-(from languages like <a href="https://www.rust-lang.org/" target="_blank">Rust</a>) and apply it
+(from languages like <a href="https://www.rust-lang.org/" target="_blank" rel="noopener">Rust</a>) and apply it
 to Gallifrey, while still allowing a majority of Gallifrey code to
 enjoy the [almost] unrestricted aliasing and pervasive mutability
 common to Java programs.</p>
-
 <p>Finally we introduce <strong>branches</strong>, a new take on transactions inspired
 by the eponymous concept from version control.  Opening a branch
 allows a program to create a new scope which is totally isolated from
@@ -563,7 +535,6 @@ of the program from the wider Gallifrey network.  While within a
 branch, programmers can perform <strong>provisional</strong> operations which
 <em>don&rsquo;t</em> guarantee sequential consistency, <em>without</em> worrying that these
 operations will threaten the consistency of the wider application.</p>
-
 <p>More details can be found in the <a href="../../publication/gallifrey/">Gallifrey SNAPL paper</a>.</p>
 
     </div>
@@ -594,7 +565,7 @@ operations will threaten the consistency of the wider application.</p>
 
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
-  <img class="portrait mr-3" src="/img/winterface-small.png" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/img/princeton-portrait.jpg" itemprop="image" alt="Avatar">
   
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/">Mae Milano</a></h5>
@@ -1706,7 +1677,7 @@ operations will threaten the consistency of the wider application.</p>
   
 
   <p class="powered-by">
-    &copy; 2020 &middot; 
+    © 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1822,7 +1793,7 @@ operations will threaten the consistency of the wider application.</p>
     
     
     
-    <script src="/js/academic.min.14cafafda844d960749b7551524d1c3a.js"></script>
+    <script src="/js/academic.min.4a2962d241ac8fe8db799a8e808e7e48.js"></script>
 
     
 

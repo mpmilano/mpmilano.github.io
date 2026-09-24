@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.163.3">
   <meta name="author" content="Mae Milano">
 
   
@@ -15,13 +15,14 @@
   
     
   
-  <meta name="description" content="Cloud computing services often replicate data and require that data stays consistent.  This tutorial centers on Derecho, a library to assist with solving these problems [1, 2].  Derecho provides consistent replication with blazing speed, often outperforming the weakly-consistent mechanisms that dominate today&#39;s cloud computing infrastructures.  Derecho&#39;s asynchronous design is key to its performance: the system achieves lock-free data streaming for critical paths, and data movement is out-of-band from the control plane.  
-
- For this tutorial, our first goal is to understand the &#34;design pattern&#34; that enables this big performance boost: separating the control and data planes, performing updates on a code path distinct from that used for queries, and transforming the system to use an asynchronous streaming communication model. 
-
- The tutorial is structured into two parts.  In the first half, based primarily on our TOCS paper [1], situates Derecho relative to prior work, explains how it obtains such high speeds, and reviews experiments that clarify why it outperforms prior solutions.  We also learn about features aimed at Edge IoT applications that work with real-time sensor data yet still need strong consistency.  The second part teaches attendees to use Derecho: we walk through the process of downloading the library, building services that use it, running them locally, and installing them on a cloud.  At the end of the second part, participants modify the Derecho demo (a simple AI Sys application), rebuild it and rerun it.  SOSP participants who only want to hear about the work but not to really learn the system are welcome to drop in just at the beginning, and then can duck out when we get to the hands-on stage.  
-[1] Derecho: Fast State Machine Replication for Cloud Services. S Jha, J Behrens, T Gkountouvas, M Milano, W Song, E Tremel, R Van Renesse, S Zink, and K Birman. ACM TOCS, 36 :2, April 2019.  
-[2] RDMC: A Reliable Multicast for Large Objects. Jonathan Behrens, Sagar Jha, Ken Birman, Edward Tremel.  IEEE DSN &#39;18, Luxembourg, June 2018.">
+  
+  
+  <meta name="description" content="Cloud computing services often replicate data and require that data stays consistent. This tutorial centers on Derecho, a library to assist with solving these problems [1, 2]. Derecho provides consistent replication with blazing speed, often outperforming the weakly-consistent mechanisms that dominate today’s cloud computing infrastructures. Derecho’s asynchronous design is key to its performance: the system achieves lock-free data streaming for critical paths, and data movement is out-of-band from the control plane.
+For this tutorial, our first goal is to understand the “design pattern” that enables this big performance boost: separating the control and data planes, performing updates on a code path distinct from that used for queries, and transforming the system to use an asynchronous streaming communication model.
+The tutorial is structured into two parts. In the first half, based primarily on our TOCS paper [1], situates Derecho relative to prior work, explains how it obtains such high speeds, and reviews experiments that clarify why it outperforms prior solutions. We also learn about features aimed at Edge IoT applications that work with real-time sensor data yet still need strong consistency. The second part teaches attendees to use Derecho: we walk through the process of downloading the library, building services that use it, running them locally, and installing them on a cloud. At the end of the second part, participants modify the Derecho demo (a simple AI Sys application), rebuild it and rerun it. SOSP participants who only want to hear about the work but not to really learn the system are welcome to drop in just at the beginning, and then can duck out when we get to the hands-on stage.
+[1] Derecho: Fast State Machine Replication for Cloud Services. S Jha, J Behrens, T Gkountouvas, M Milano, W Song, E Tremel, R Van Renesse, S Zink, and K Birman. ACM TOCS, 36 :2, April 2019.
+[2] RDMC: A Reliable Multicast for Large Objects. Jonathan Behrens, Sagar Jha, Ken Birman, Edward Tremel. IEEE DSN ‘18, Luxembourg, June 2018.
+">
 
   
   <link rel="alternate" hreflang="en-us" href="https://languagesforsyste.ms/talk/derecho-tutorial/">
@@ -83,22 +84,10 @@
 
   
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-130045632-2', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
   
 
+  
+  
   
   <link rel="alternate" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
   <link rel="feed" href="https://languagesforsyste.ms/index.xml" type="application/rss+xml" title="Mae Milano">
@@ -118,13 +107,12 @@
   <meta property="og:site_name" content="Mae Milano">
   <meta property="og:url" content="https://languagesforsyste.ms/talk/derecho-tutorial/">
   <meta property="og:title" content="Derecho Tutorial | Mae Milano">
-  <meta property="og:description" content="Cloud computing services often replicate data and require that data stays consistent.  This tutorial centers on Derecho, a library to assist with solving these problems [1, 2].  Derecho provides consistent replication with blazing speed, often outperforming the weakly-consistent mechanisms that dominate today&#39;s cloud computing infrastructures.  Derecho&#39;s asynchronous design is key to its performance: the system achieves lock-free data streaming for critical paths, and data movement is out-of-band from the control plane.  
-
- For this tutorial, our first goal is to understand the &#34;design pattern&#34; that enables this big performance boost: separating the control and data planes, performing updates on a code path distinct from that used for queries, and transforming the system to use an asynchronous streaming communication model. 
-
- The tutorial is structured into two parts.  In the first half, based primarily on our TOCS paper [1], situates Derecho relative to prior work, explains how it obtains such high speeds, and reviews experiments that clarify why it outperforms prior solutions.  We also learn about features aimed at Edge IoT applications that work with real-time sensor data yet still need strong consistency.  The second part teaches attendees to use Derecho: we walk through the process of downloading the library, building services that use it, running them locally, and installing them on a cloud.  At the end of the second part, participants modify the Derecho demo (a simple AI Sys application), rebuild it and rerun it.  SOSP participants who only want to hear about the work but not to really learn the system are welcome to drop in just at the beginning, and then can duck out when we get to the hands-on stage.  
-[1] Derecho: Fast State Machine Replication for Cloud Services. S Jha, J Behrens, T Gkountouvas, M Milano, W Song, E Tremel, R Van Renesse, S Zink, and K Birman. ACM TOCS, 36 :2, April 2019.  
-[2] RDMC: A Reliable Multicast for Large Objects. Jonathan Behrens, Sagar Jha, Ken Birman, Edward Tremel.  IEEE DSN &#39;18, Luxembourg, June 2018.">
+  <meta property="og:description" content="Cloud computing services often replicate data and require that data stays consistent. This tutorial centers on Derecho, a library to assist with solving these problems [1, 2]. Derecho provides consistent replication with blazing speed, often outperforming the weakly-consistent mechanisms that dominate today’s cloud computing infrastructures. Derecho’s asynchronous design is key to its performance: the system achieves lock-free data streaming for critical paths, and data movement is out-of-band from the control plane.
+For this tutorial, our first goal is to understand the “design pattern” that enables this big performance boost: separating the control and data planes, performing updates on a code path distinct from that used for queries, and transforming the system to use an asynchronous streaming communication model.
+The tutorial is structured into two parts. In the first half, based primarily on our TOCS paper [1], situates Derecho relative to prior work, explains how it obtains such high speeds, and reviews experiments that clarify why it outperforms prior solutions. We also learn about features aimed at Edge IoT applications that work with real-time sensor data yet still need strong consistency. The second part teaches attendees to use Derecho: we walk through the process of downloading the library, building services that use it, running them locally, and installing them on a cloud. At the end of the second part, participants modify the Derecho demo (a simple AI Sys application), rebuild it and rerun it. SOSP participants who only want to hear about the work but not to really learn the system are welcome to drop in just at the beginning, and then can duck out when we get to the hands-on stage.
+[1] Derecho: Fast State Machine Replication for Cloud Services. S Jha, J Behrens, T Gkountouvas, M Milano, W Song, E Tremel, R Van Renesse, S Zink, and K Birman. ACM TOCS, 36 :2, April 2019.
+[2] RDMC: A Reliable Multicast for Large Objects. Jonathan Behrens, Sagar Jha, Ken Birman, Edward Tremel. IEEE DSN ‘18, Luxembourg, June 2018.
+">
   
   
     
@@ -445,13 +433,9 @@
     </li>
     <li>
       <a class="email"
-	  href="#"
-	  data-contact="bGUtZW1haWxAdGhlLWRvbWFpbi5jb20="
-      data-subj="QW4gQW1hemluZyBTdWJqZWN0"
-      onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">
+         href="mailto:?subject=Derecho%20Tutorial&amp;body=https%3a%2f%2flanguagesforsyste.ms%2ftalk%2fderecho-tutorial%2f">
         <i class="fas fa-envelope"></i>
       </a>
-	  
     </li>
   </ul>
 </div>
@@ -547,11 +531,9 @@
     
       <h3>Abstract</h3>
       <p class="pub-abstract" itemprop="text"><p>Cloud computing services often replicate data and require that data stays consistent.  This tutorial centers on Derecho, a library to assist with solving these problems [1, 2].  Derecho provides consistent replication with blazing speed, often outperforming the weakly-consistent mechanisms that dominate today&rsquo;s cloud computing infrastructures.  Derecho&rsquo;s asynchronous design is key to its performance: the system achieves lock-free data streaming for critical paths, and data movement is out-of-band from the control plane.</p>
-
 <p>For this tutorial, our first goal is to understand the &ldquo;design pattern&rdquo; that enables this big performance boost: separating the control and data planes, performing updates on a code path distinct from that used for queries, and transforming the system to use an asynchronous streaming communication model.</p>
-
-<p>The tutorial is structured into two parts.  In the first half, based primarily on our TOCS paper [1], situates Derecho relative to prior work, explains how it obtains such high speeds, and reviews experiments that clarify why it outperforms prior solutions.  We also learn about features aimed at Edge IoT applications that work with real-time sensor data yet still need strong consistency.  The second part teaches attendees to use Derecho: we walk through the process of downloading the library, building services that use it, running them locally, and installing them on a cloud.  At the end of the second part, participants modify the Derecho demo (a simple AI Sys application), rebuild it and rerun it.  SOSP participants who only want to hear about the work but not to really learn the system are welcome to drop in just at the beginning, and then can duck out when we get to the hands-on stage.<br />
-[1] Derecho: Fast State Machine Replication for Cloud Services. S Jha, J Behrens, T Gkountouvas, M Milano, W Song, E Tremel, R Van Renesse, S Zink, and K Birman. ACM TOCS, 36 :2, April 2019.<br />
+<p>The tutorial is structured into two parts.  In the first half, based primarily on our TOCS paper [1], situates Derecho relative to prior work, explains how it obtains such high speeds, and reviews experiments that clarify why it outperforms prior solutions.  We also learn about features aimed at Edge IoT applications that work with real-time sensor data yet still need strong consistency.  The second part teaches attendees to use Derecho: we walk through the process of downloading the library, building services that use it, running them locally, and installing them on a cloud.  At the end of the second part, participants modify the Derecho demo (a simple AI Sys application), rebuild it and rerun it.  SOSP participants who only want to hear about the work but not to really learn the system are welcome to drop in just at the beginning, and then can duck out when we get to the hands-on stage.<br>
+[1] Derecho: Fast State Machine Replication for Cloud Services. S Jha, J Behrens, T Gkountouvas, M Milano, W Song, E Tremel, R Van Renesse, S Zink, and K Birman. ACM TOCS, 36 :2, April 2019.<br>
 [2] RDMC: A Reliable Multicast for Large Objects. Jonathan Behrens, Sagar Jha, Ken Birman, Edward Tremel.  IEEE DSN &lsquo;18, Luxembourg, June 2018.</p>
 </p>
     
@@ -660,7 +642,7 @@
   
 
   <p class="powered-by">
-    &copy; 2020 &middot; 
+    © 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -776,7 +758,7 @@
     
     
     
-    <script src="/js/academic.min.14cafafda844d960749b7551524d1c3a.js"></script>
+    <script src="/js/academic.min.4a2962d241ac8fe8db799a8e808e7e48.js"></script>
 
     
 

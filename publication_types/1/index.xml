@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 on Mae Milano</title>
@@ -7,16 +6,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Tue, 08 Jul 2025 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 -0400</lastBuildDate>
+    <atom:link href="https://languagesforsyste.ms/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
-	<atom:link href="https://languagesforsyste.ms/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fully-Automatic Type Inference for Borrows with Lifetimes</title>
+      <link>https://languagesforsyste.ms/publication/fully-automatic-type-inference/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 -0400</pubDate>
+      <guid>https://languagesforsyste.ms/publication/fully-automatic-type-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interactive Theorem Provers for Proof Education</title>
+      <link>https://languagesforsyste.ms/publication/interactive-theorem-provers-proof/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 -0400</pubDate>
+      <guid>https://languagesforsyste.ms/publication/interactive-theorem-provers-proof/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Building Bridges: Safe Interactions with Foreign Languages through Omniglot</title>
       <link>https://languagesforsyste.ms/publication/omniglot/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/omniglot/</guid>
       <description></description>
     </item>
@@ -25,7 +39,6 @@
       <title>Flo: A Semantic Foundation for Progressive Stream Processing</title>
       <link>https://languagesforsyste.ms/publication/flo/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 -0500</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/flo/</guid>
       <description></description>
     </item>
@@ -34,7 +47,6 @@
       <title>Verifying a C Implementation of Derecho’s Coordination Mechanism Using VST and Coq</title>
       <link>https://languagesforsyste.ms/publication/nasafm/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/nasafm/</guid>
       <description></description>
     </item>
@@ -43,7 +55,6 @@
       <title>Better Defunctionalization through Lambda Set Specialization</title>
       <link>https://languagesforsyste.ms/publication/lss/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/lss/</guid>
       <description></description>
     </item>
@@ -52,7 +63,6 @@
       <title>Keep CALM and CRDT On</title>
       <link>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 -0500</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/keep-calm-and-crdt-on/</guid>
       <description></description>
     </item>
@@ -61,7 +71,6 @@
       <title>Katara: Synthesizing CRDTs with Verified Lifting</title>
       <link>https://languagesforsyste.ms/publication/katara/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/katara/</guid>
       <description></description>
     </item>
@@ -70,7 +79,6 @@
       <title>A flexible type system for fearless concurrency</title>
       <link>https://languagesforsyste.ms/publication/fearless-concurrency/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/fearless-concurrency/</guid>
       <description></description>
     </item>
@@ -79,7 +87,6 @@
       <title>A Tour of Gallifrey, a Language for Geodistributed Programming</title>
       <link>https://languagesforsyste.ms/publication/gallifrey/</link>
       <pubDate>Thu, 16 May 2019 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/gallifrey/</guid>
       <description></description>
     </item>
@@ -88,7 +95,6 @@
       <title>Derecho: Fast State Machine Replication for Cloud Services</title>
       <link>https://languagesforsyste.ms/publication/derecho/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/derecho/</guid>
       <description></description>
     </item>
@@ -97,7 +103,6 @@
       <title>MixT: A Language for Mixing Consistency in Geodistributed Transactions</title>
       <link>https://languagesforsyste.ms/publication/mixt/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/mixt/</guid>
       <description></description>
     </item>
@@ -106,7 +111,6 @@
       <title>A Coalgebraic Decision Procedure for NetKAT</title>
       <link>https://languagesforsyste.ms/publication/netkat/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 -0400</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/netkat/</guid>
       <description></description>
     </item>
@@ -115,7 +119,6 @@
       <title>Python: The Full Monty</title>
       <link>https://languagesforsyste.ms/publication/python/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 -0500</pubDate>
-      
       <guid>https://languagesforsyste.ms/publication/python/</guid>
       <description></description>
     </item>

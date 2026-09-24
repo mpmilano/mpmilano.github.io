@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.163.3">
   <meta name="author" content="Mae Milano">
 
   
@@ -14,6 +14,8 @@
   
   
     
+  
+  
   
   <meta name="description" content="PhD, Programming Languages and Systems">
 
@@ -77,22 +79,10 @@
 
   
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-130045632-2', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
   
 
+  
+  
   
   <link rel="alternate" href="https://languagesforsyste.ms/publication/index.xml" type="application/rss+xml" title="Mae Milano">
   <link rel="feed" href="https://languagesforsyste.ms/publication/index.xml" type="application/rss+xml" title="Mae Milano">
@@ -420,6 +410,12 @@
         
         
       
+        
+        
+      
+        
+        
+      
 
       <div class="form-row mb-3">
         <div class="col-auto">
@@ -448,6 +444,10 @@
             <option value="*">All</option>
             
             
+            
+            <option value=".year-2026">
+              2026
+            </option>
             
             <option value=".year-2025">
               2025
@@ -499,6 +499,186 @@
       </div>
 
       <div id="container-publications">
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2026">
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/fully-automatic-type-inference/" itemprop="url">Fully-Automatic Type Inference for Borrows with Lifetimes</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    We present a new pure functional language and type system with borrows with lifetimes, and a corresponding fully-automatic type inference procedure. Inference provides users the performance benefits of borrows with lifetimes without requiring user annotation. If the user’s program cannot be typed, inference inserts a handful of reference count operations so that it can be typed. We provide a heap semantics for our borrowing language and prove a soundness theorem, guaranteeing that well-typed programs do not violate memory safety. We implement our memory management strategy as part of the Morphic language stack and compare it to Perceus, a state-of-the-art reference-counting technique based on linear type inference. We find that our system is able to eliminate almost all reference count operations across a range of programs, reducing reference count increments by 75–100% on all benchmarks with reference count increments under the baseline. As a result, we achieve a 1.48× geomean speedup overall on all benchmarks.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    William Brandon, Benjamin Driscoll, Frank Dai, Jonathan Ragan-Kelley, Mae Milano, Alex Aiken
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>Proceedings of the ACM on Programming Languages, Volume 10, No. OOPSLA1</em>,
+    
+    2026
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/doi/pdf/10.1145/3798221" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/fully-automatic-type-inference/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3798221" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2025">
+          
+            <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/interactive-theorem-provers-proof/" itemprop="url">Interactive Theorem Provers for Proof Education</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Proof techniques are a core component of computer science (CS) education, yet many CS students struggle to engage with and understand proof-based material. Interactive Theorem Provers (ITPs), originally developed for formal verification, have emerged as promising educational tools that offer structured feedback and align well with CS students’ existing technical skills. While recent work has begun to explore the use of ITPs in educational settings, a notable gap remains: little is known about how well these tools support the range of proof techniques taught in CS curricula or how they might be improved to do so. We specifically seek to close this gap and contribute to the growing literature on ITPs in education through three concrete efforts: a user study of student experiences with the Coq proof assistant, a case study comparing proof development across Coq, Lean, and traditional methods, and a heuristic evaluation of each ITP using Nielsen’s usability heuristics.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Romina Mahinpei, Manoel Horta Ribeiro, Mae Milano
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    <em>Proceedings of the 2025 ACM SIGPLAN International Symposium on SPLASH-E</em>,
+    
+    2025
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://dl.acm.org/doi/pdf/10.1145/3758317.3759679" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/interactive-theorem-provers-proof/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1145/3758317.3759679" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+  </div>
+
+</div>
+
+          
+        </div>
+
         
 
         
@@ -2140,7 +2320,7 @@
 
   <div class="pub-publication">
     
-    <em>Proceedings of the 2013 ACM SIGPLAN International Conference on Object Oriented Programming Systems Languages &#38; Applications</em>,
+    <em>Proceedings of the 2013 ACM SIGPLAN International Conference on Object Oriented Programming Systems Languages &amp; Applications</em>,
     
     2013
   </div>
@@ -2209,7 +2389,7 @@
   
 
   <p class="powered-by">
-    &copy; 2020 &middot; 
+    © 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -2325,7 +2505,7 @@
     
     
     
-    <script src="/js/academic.min.14cafafda844d960749b7551524d1c3a.js"></script>
+    <script src="/js/academic.min.4a2962d241ac8fe8db799a8e808e7e48.js"></script>
 
     
 

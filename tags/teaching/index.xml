@@ -1,22 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>teaching on Mae Milano</title>
+    <title>Teaching on Mae Milano</title>
     <link>https://languagesforsyste.ms/tags/teaching/</link>
-    <description>Recent content in teaching on Mae Milano</description>
+    <description>Recent content in Teaching on Mae Milano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020</copyright>
     <lastBuildDate>Tue, 20 Dec 2022 00:00:00 -0500</lastBuildDate>
+    <atom:link href="https://languagesforsyste.ms/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
-	<atom:link href="https://languagesforsyste.ms/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Researching with Undergraduates: a Curricular Approach</title>
       <link>https://languagesforsyste.ms/talk/researching-with-undergraduates/</link>
       <pubDate>Tue, 20 Dec 2022 00:00:00 -0500</pubDate>
-      
       <guid>https://languagesforsyste.ms/talk/researching-with-undergraduates/</guid>
       <description></description>
     </item>
@@ -25,7 +23,6 @@
       <title>Researching with, and as, an Undergraduate Student</title>
       <link>https://languagesforsyste.ms/talk/researching-with-undergraduates-popl/</link>
       <pubDate>Tue, 20 Dec 2022 00:00:00 -0500</pubDate>
-      
       <guid>https://languagesforsyste.ms/talk/researching-with-undergraduates-popl/</guid>
       <description></description>
     </item>
